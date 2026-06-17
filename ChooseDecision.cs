@@ -16,11 +16,7 @@ namespace TextBasedAdventureGame
         protected string deciding;
 
 
-        public abstract bool SendBool1();
-
-
-
-        public abstract bool SendBool2();
+       
         
         public abstract void Decisions();
         /*
@@ -43,7 +39,11 @@ namespace TextBasedAdventureGame
         }
         */
 
+        public abstract bool SendBool1();
 
+
+
+        public abstract bool SendBool2();
 
         /*
        Rooms

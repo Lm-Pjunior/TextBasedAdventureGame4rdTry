@@ -10,27 +10,41 @@ namespace TextBasedAdventureGame
     {
         public override void Decisions()
         {
-            throw new NotImplementedException();
+            /*
+                      {
+                      Console.WriteLine(des1);
+                      Console.WriteLine(des2);
+                      if (des3 != null)
+                      {
+                          Console.WriteLine(des3);
+                      }
+                      if (des4 != null)
+                      {
+                          Console.WriteLine(des4);
+                      }
+                     deciding = Console.ReadLine();
+                     if(deciding == "a" || deciding == "A")
+                      {
+                          Console.WriteLine("");
+                      }
+                  }
+                  */
         }
-        /*
-         Decisions
-          {
-          Console.WriteLine(des1);
-          Console.WriteLine(des2);
-          if (des3 != null)
-          {
-              Console.WriteLine(des3);
-          }
-          if (des4 != null)
-          {
-              Console.WriteLine(des4);
-          }
-         deciding = Console.ReadLine();
-         if(deciding == "a" || deciding == "A")
-          {
-              Console.WriteLine("");
-          }
-      }
-      */
+
+        public override bool SendBool1()
+        {
+            //else
+            //{
+            return false;
+            //}        
+        }
+
+        public override bool SendBool2()
+        {
+            //else
+            //{
+            return false;
+            //}
+            }
+        }
     }
-}
