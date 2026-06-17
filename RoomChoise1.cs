@@ -10,11 +10,30 @@ namespace TextBasedAdventureGame
     {
         private bool friend = false; // choise B
         private bool baton = false; //choise D
-        //decision A results in a bullet through the head and choise C in getting fired
-
+        //decision A results in a bullet through the head
+        //choise C in getting fired
+        bool error;
         public override void Decisions()
         {
-            throw new NotImplementedException();
+            /*
+          {
+          Console.WriteLine(des1);
+          Console.WriteLine(des2);
+          if (des3 != null)
+          {
+              Console.WriteLine(des3);
+          }
+          if (des4 != null)
+          {
+              Console.WriteLine(des4);
+          }
+         deciding = Console.ReadLine();
+         if(deciding == "a" || deciding == "A")
+          {
+              Console.WriteLine("");
+          }
+      }
+      */
         }
         public override bool SendBool1()
         {
