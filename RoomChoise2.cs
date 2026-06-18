@@ -8,6 +8,7 @@ namespace TextBasedAdventureGame
 {
     internal class RoomChoise2 : ChooseDecision
     {
+        //A is about the security room witht he friendship thing going on
         public override void Decisions()
         {
             /*
@@ -31,28 +32,6 @@ namespace TextBasedAdventureGame
                   */
         }
 
-        public override bool SendBool1(string decision)
-        {
-            if (decision == "a" || decision == "A")
-            {
-                return true;
-            }
-            else
-            {
-            return false;
-            }        
-        }
-
-        public override bool SendBool2(string decision)
-        {
-            if (decision == "b" || decision == "B")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+      
       }
     }
