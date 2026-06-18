@@ -12,7 +12,7 @@ namespace TextBasedAdventureGame
         private bool baton = false; //choise D
         //decision A results in a bullet through the head
         //choise C in getting fired
-        bool error;
+        
         public override void Decisions()
         {
             
@@ -38,9 +38,10 @@ namespace TextBasedAdventureGame
         public override bool SendBool1(string decision)
         {
 
-            if (decision == "a" || decision == "A")
+            if (decision == "b" || decision == "B")
             {
                 return true;
+
             }
             else
             {
@@ -49,7 +50,7 @@ namespace TextBasedAdventureGame
         }
         public override bool SendBool2(string decision)
         {
-            if (decision == "b" || decision == "B")
+            if (decision == "d" || decision == "D")
             {
                 return true;
             }

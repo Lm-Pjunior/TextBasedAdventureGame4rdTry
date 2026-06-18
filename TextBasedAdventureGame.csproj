@@ -52,6 +52,7 @@
     <Compile Include="RoomChoise1.cs" />
     <Compile Include="RoomChoise2.cs" />
     <Compile Include="Rooms.cs" />
+    <Compile Include="StoryLine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
