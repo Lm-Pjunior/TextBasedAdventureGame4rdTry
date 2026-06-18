@@ -31,20 +31,28 @@ namespace TextBasedAdventureGame
                   */
         }
 
-        public override bool SendBool1()
+        public override bool SendBool1(string decision)
         {
-            //else
-            //{
+            if (decision == "a" || decision == "A")
+            {
+                return true;
+            }
+            else
+            {
             return false;
-            //}        
+            }        
         }
 
-        public override bool SendBool2()
+        public override bool SendBool2(string decision)
         {
-            //else
-            //{
-            return false;
-            //}
+            if (decision == "b" || decision == "B")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
+      }
     }

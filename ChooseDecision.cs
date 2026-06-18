@@ -39,11 +39,11 @@ namespace TextBasedAdventureGame
         }
         */
 
-        public abstract bool SendBool1();
+        public abstract bool SendBool1(string decision);
 
 
 
-        public abstract bool SendBool2();
+        public abstract bool SendBool2(string decision);
 
         /*
        Rooms

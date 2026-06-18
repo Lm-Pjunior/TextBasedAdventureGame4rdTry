@@ -15,7 +15,7 @@ namespace TextBasedAdventureGame
         bool error;
         public override void Decisions()
         {
-            /*
+            
           {
           Console.WriteLine(des1);
           Console.WriteLine(des2);
@@ -30,19 +30,19 @@ namespace TextBasedAdventureGame
          deciding = Console.ReadLine();
          if(deciding == "a" || deciding == "A")
           {
-              Console.WriteLine("");
+              Console.WriteLine(""); 
           }
       }
-      */
+      
         }
-        public override bool SendBool1()
+        public override bool SendBool1(string decision)
         {
             //else
             //{
             return false;
             //}
         }
-        public override bool SendBool2()
+        public override bool SendBool2(string decision)
         {
             //else
             //{
