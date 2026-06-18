@@ -13,7 +13,7 @@ namespace TextBasedAdventureGame
         protected string des2;
         protected string des3;
         protected string des4;
-        protected string deciding;
+        protected string decision;
 
 
        
