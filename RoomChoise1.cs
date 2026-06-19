@@ -32,6 +32,14 @@ namespace TextBasedAdventureGame
                     }
                     if (decision == "a" || decision == "A")
                     {
+                        Console.WriteLine("You're bored and decide to check out the shooting range, ignoring the warning the instructor gave you. Wow... you died");
+                        Console.WriteLine("but hey this propably was a mercy seeing as you couldn't followe such simplistic commands.");
+                        Console.WriteLine("Your corpse lays on the ground with brain tissue lying all over the floor. ");
+                        Console.WriteLine("the sight is as unsightly as your intelligence...");
+                        Console.WriteLine("[Dumb ways to die ending achieved]");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press 'enter' to continue.");
+                        Console.ReadLine();
                         Console.WriteLine("");
                     }
                     if (decision == "b" || decision == "B")
@@ -40,7 +48,14 @@ namespace TextBasedAdventureGame
                     }
                     if (decision == "c" || decision == "C")
                     {
+                        Console.WriteLine("You decided that working for a staggering 296 seconds was more than plenty... so you decide to go home");
+                        Console.WriteLine("this ofcourse gets you fired so hard you'll be flipping burgers for the rest of your life but hey...");
+                        Console.WriteLine(" atleast YOU'RE alive...");
+                        Console.WriteLine("[Fired ending achieved]");
                         Console.WriteLine("");
+                        Console.WriteLine("Press 'enter' to continue.");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (decision == "d" || decision == "D")
                     {
