@@ -14,21 +14,13 @@ namespace TextBasedAdventureGame
         private bool looping = true;
         //decision A results in a bullet through the head
         //choise C in getting fired
-        
+        private StoryLine _story = new StoryLine();
         public override void Decisions()
         {
             while (looping) {
                 {
                     decision = Console.ReadLine();
-                    Console.WriteLine(des1);
-                    Console.WriteLine(des2);
-                    if (des3 != null)
-                    {
-                        Console.WriteLine(des3);
-                    }
-                    if (des4 != null)
-                    {
-                        Console.WriteLine(des4);
+                    
                     }
                     if (decision == "a" || decision == "A")
                     {
@@ -36,11 +28,11 @@ namespace TextBasedAdventureGame
                         Console.WriteLine("but hey this propably was a mercy seeing as you couldn't followe such simplistic commands.");
                         Console.WriteLine("Your corpse lays on the ground with brain tissue lying all over the floor. ");
                         Console.WriteLine("the sight is as unsightly as your intelligence...");
-                        Console.WriteLine("[Dumb ways to die ending achieved]");
+                        Console.WriteLine("[Mercy kill ending achieved]");
                         Console.WriteLine("");
                         Console.WriteLine("Press 'enter' to continue.");
                         Console.ReadLine();
-                        Console.WriteLine("");
+                        Console.Clear();
                     }
                     if (decision == "b" || decision == "B")
                     {
@@ -64,7 +56,7 @@ namespace TextBasedAdventureGame
                 }
       }
       
-        }
+        
         public override bool SendBool1(string decision)
         {
 

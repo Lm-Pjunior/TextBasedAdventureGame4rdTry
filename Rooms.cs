@@ -15,7 +15,10 @@ namespace TextBasedAdventureGame
             _name = name;
             _description = description;
         }
-        public abstract void EnterRoom();
+        public void EnterRoom()
+        {
+            Console.WriteLine(_description);
+        }
 
        /*
         First room has to have a room description with the mentioning of:

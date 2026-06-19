@@ -8,11 +8,6 @@ namespace TextBasedAdventureGame
 {  //make for each room a void type function that allowes them to pick a choise
     public abstract class ChooseDecision
     {
-        protected string decisionDesc;
-        protected string des1;
-        protected string des2;
-        protected string des3;
-        protected string des4;
         protected string decision;
 
 
