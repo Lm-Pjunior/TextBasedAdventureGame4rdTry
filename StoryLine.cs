@@ -35,7 +35,57 @@ namespace TextBasedAdventureGame
                 "   something there, " +
                 "The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing\r\n    " +
                 " there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?");
+
+            /*
+            if(coward = true)
+            {
+            SecurityRoomCoward();
+            }
+             
+            if ( = true)
+            {
+                instatiATEthingss();
+            }
+            
+            if ( = true)
+            {
+                instantiatethings();
+            }
+            */
+
+
         }
+
+        public void SecurityRoomCoward()
+        {
+            Console.WriteLine($"You decide to make a run for it and go in the opposite direction of the beast, back to the medicalbay we go!\r\n      " +
+                "        You run through the hallway huffing and puffing. Yet you have an omminous feeling of being watched, by every step your doubts grow... what is it?\r\n         " +
+                "     What is following me? But... you made it, you're at the medicalbay. At last, freedom from this accursed feeling...\r\n          " +
+                "    As time went on, you grew hungry and scared... is it still there? what, WHAT is this feeling gnawing at the back of my head...");
+            Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("W H A T  D O  I  D O . . .\r\n\r\n ");
+            Console.ReadLine();
+            Console.WriteLine("Your sanity is leaving you, you're out of food, sleep deprived and paranoid... you hallucinate and your world is anything but desirable.\r\n       " +
+                "       A creature known as The Stalker that does not tire and does not need to eat has been with you, toying with you and your tired soul.\r\n        " +
+                "      It had noticed your heavy footsteps near its lair... you shouldn't have ran... you should've stayed and saved the man... but alas, you didn't and now... you die\r\n       " +
+                "       because of it. [Death is a mercy ending achieved]");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public void GeneratorRoom()
@@ -355,7 +405,7 @@ namespace TextBasedAdventureGame
 
      
 
-  
+  +
      */
 
 
