@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,11 +11,12 @@ namespace TextBasedAdventureGame
     {
         public OutsideFacility(string name, string description) : base(name, description)
         {
+
         }
 
-        public override void EnterRoom()
+        public void GoEnterRoom()
         {
-            
+            base.EnterRoom();
         }
     }
 }

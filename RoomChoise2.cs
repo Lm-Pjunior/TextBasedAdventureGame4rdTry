@@ -13,16 +13,7 @@ namespace TextBasedAdventureGame
         {
             /*
                       {
-                      Console.WriteLine(des1);
-                      Console.WriteLine(des2);
-                      if (des3 != null)
-                      {
-                          Console.WriteLine(des3);
-                      }
-                      if (des4 != null)
-                      {
-                          Console.WriteLine(des4);
-                      }
+                      
                      deciding = Console.ReadLine();
                      if(deciding == "a" || deciding == "A")
                       {
