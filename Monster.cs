@@ -18,7 +18,14 @@ namespace TextBasedAdventureGame
             _name = name;
             _desc = desc;
             _attackType = attackType;
-            _spawnRegion = spawnRegion;
+        }
+        public void CreatureSpawn()
+        {
+            Console.WriteLine($"A {_name} appeared.");
+        }
+        public void BeastAppearance()
+        {
+            Console.WriteLine(_desc);
         }
         public void Attack()
         {
