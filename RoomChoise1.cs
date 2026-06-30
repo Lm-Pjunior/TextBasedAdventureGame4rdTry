@@ -32,12 +32,20 @@ namespace TextBasedAdventureGame
                         Console.WriteLine("");
                         Console.WriteLine("Press 'enter' to continue.");
                         Console.ReadLine();
-                    }
-                    if (decision == "b" || decision == "B")
+                   
+                        _looping = false;
+
+                }
+                if (decision == "b" || decision == "B")
                     {
-                        Console.WriteLine("");
+                      _looping = false;
+                      //instatiate storyline
+
+
                     }
-                    if (decision == "c" || decision == "C")
+
+
+                if (decision == "c" || decision == "C")
                     {
                         Console.WriteLine("You decided that working for a staggering 296 seconds was more than plenty... so you decide to go home");
                         Console.WriteLine("this ofcourse gets you fired so hard you'll be flipping burgers for the rest of your life but hey...");
@@ -46,10 +54,18 @@ namespace TextBasedAdventureGame
                         Console.WriteLine("");
                         Console.WriteLine("Press 'enter' to continue.");
                         Console.ReadLine();
+
+                        _looping = false;
+
                     }
                     if (decision == "d" || decision == "D")
                     {
-                        Console.WriteLine("");
+
+                    Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
+                    _looping = false;
+                    //instatiate storyline
+
+
                     }
                 }
       }
