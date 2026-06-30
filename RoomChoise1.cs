@@ -25,11 +25,10 @@ namespace TextBasedAdventureGame
                     if (decision == "a" || decision == "A")
                     {
                         Console.WriteLine("You're bored and decide to check out the shooting range, ignoring the warning the instructor gave you. Wow... you died");
-                        Console.WriteLine("but hey this propably was a mercy seeing as you couldn't followe such simplistic commands.");
+                        Console.WriteLine("but hey this propably was natural selection as you couldn't followe such BASIC commands.");
                         Console.WriteLine("Your corpse lays on the ground with brain tissue lying all over the floor. ");
                         Console.WriteLine("the sight is as unsightly as your intelligence...");
-                        Console.WriteLine("[Mercy kill ending achieved]");
-                        Console.WriteLine("");
+                        Console.WriteLine("[Mercy kill ending achieved]\r\n");
                         Console.WriteLine("Press 'enter' to continue.");
                         Console.ReadLine();
                    

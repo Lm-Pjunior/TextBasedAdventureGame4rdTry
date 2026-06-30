@@ -36,14 +36,32 @@ namespace TextBasedAdventureGame
 
         public virtual bool SendBool1(string decision)
         {
-            return false;
-        }
+
+            if (decision == "a" || decision == "A")
+            {
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
+        }        
 
 
 
         public virtual bool SendBool2(string decision)
         {
-            return false;
+
+            if (decision == "b" || decision == "B")
+            {
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
         }
 
         protected void ClearFunction()

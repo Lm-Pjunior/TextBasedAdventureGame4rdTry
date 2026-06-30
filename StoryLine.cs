@@ -31,13 +31,13 @@ namespace TextBasedAdventureGame
         {
             Console.WriteLine("You make your way to the security but your path has been blocked, the doors closed and the walls shatterd.\r\n " +
                 "You walk around these ruins once called a corridor in order to find a path towards the security room...\r\n     " +
-                "After a long while you stumble upon a locked door near the medicalbay maybe you could find someone there with an acces key, and thus \r\n     " +
-                "you made your way towards the medicalbay...\r\n   " +
+                "After a long while you stumble upon a locked door near the medical bay maybe you could find someone there with an access key, and thus \r\n     " +
+                "you made your way towards the medical bay...\r\n   " +
                 "  The first thing you did was ofcourse scavenge for supplies, afterall you're unarmed.\r\n     " +
-                "You take 2 medkits with you but they hold some unfamiliar medical supploes... it has to be something good afterall this place has some serious tech.\r\n    " +
+                "You take 2 medkits with you but they hold some unfamiliar medical supplies... it has to be something good afterall this place has some serious tech.\r\n    " +
                 " You sadly didn't find any keycards but decide to go onwards anyways... maybe you'll have better luck by the next desitantion.\r\n\r\n   " +
                 "  You walk through the hallways once more navigating with the map that the instructor had given you. Albeit not as functional due to the rampage \r\n" +
-                "     that went through these hallways... after a while you start voices, are you finally going insane from all the mental fatigue? Or is there actualy\r\n  " +
+                "     that went through these hallways... after a while you start hearing voices, are you finally going insane from all the mental fatigue? Or is there actualy\r\n  " +
                 "   something there, " +
                 "The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing\r\n    " +
                 " there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?");
@@ -64,9 +64,9 @@ namespace TextBasedAdventureGame
 
         public void SecurityRoomCoward()
         {
-            Console.WriteLine($"You decide to make a run for it and go in the opposite direction of the beast, back to the medicalbay we go!\r\n      " +
+            Console.WriteLine($"You decide to make a run for it and go in the opposite direction of the beast, back to the medical bay we go!\r\n      " +
                 "        You run through the hallway huffing and puffing. Yet you have an omminous feeling of being watched, by every step your doubts grow... what is it?\r\n         " +
-                "     What is following me? But... you made it, you're at the medicalbay. At last, freedom from this accursed feeling...\r\n          " +
+                "     What is following me? But... you made it, you're at the medical bay. At last, freedom from this accursed feeling...\r\n          " +
                 "    As time went on, you grew hungry and scared... is it still there? what, WHAT is this feeling gnawing at the back of my head...");
             Console.WriteLine("Press 'enter' to continue.");
             Console.ReadLine();
@@ -202,15 +202,15 @@ namespace TextBasedAdventureGame
              A. SecurityRoom: (friendship)
              You make your way to the security room but your path has been blocked, the doors closed and the walls shatterd.
              You walk around these ruins once called a corridor in order to find a path towards the security room...
-             After a long while you stumble upon a locked door near the medicalbay, maybe you could find someone there with an acces key, and thus 
-             you made your way towards the medicalbay...
+             After a long while you stumble upon a locked door near the medical bay, maybe you could find someone there with an access key, and thus 
+             you made your way towards the medical bay...
              The first thing you did was ofcourse scavenge for supplies, afterall you're unarmed.
              You take 2 medkits with you but they hold some unfamiliar medical supplies... it has to be something good afterall this place has some serious tech.
              You sadly didn't find any keycards but decide to go onwards anyways... maybe you'll have better luck by the next desitantion.
 
              You walk through the hallways once more navigating with the map that the instructor had given you. Albeit not as functional due to the rampage 
-             that went through these hallways... after a while you start voices, are you finally going insane from all the mental fatigue? Or is there actualy
-             something there, The voice starts calling for help you  also hear him grunt and you wonder if you should help but the screams for help weren't the only thing
+             that went through these hallways... after a while you start hearing voices, are you finally going insane from all the mental fatigue? Or is there actualy
+             something there, The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing
              there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?
 
                   SubChoiseSecurity 1
@@ -219,9 +219,9 @@ namespace TextBasedAdventureGame
 
                   A. Fuck this shit I'm out!
                   [The coward = true]
-                      You decide to make a run for it and go in the opposite direction of the beast, back to the medicalbay we go!
+                      You decide to make a run for it and go in the opposite direction of the beast, back to the medical bay we go!
                       You run through the hallway huffing and puffing. Yet you have an omminous feeling of being watched, by every step your doubts grow... what is it?
-                      What is following me? But... you made it, you're at the medicalbay. At last, freedom from this accursed feeling...
+                      What is following me? But... you made it, you're at the medical bay. At last, freedom from this accursed feeling...
                       As time went on, you grew hungry and scared... is it still there? what, WHAT is this feeling gnawing at the back of my head... 
                       W H A T  D O  I  D O . . .
 
@@ -235,15 +235,15 @@ namespace TextBasedAdventureGame
 
                      As you wait you hear gunshots in the distance, a lot of gunshots it HAS to be a squad makking their way...
                      So you make your way to the guard and come to his rescue as you open the firstaid kit
-                     the fallen guard's eyes go to the mysterious stim grabbing the chance you ask what it is, he explains that it is one of the classified infomation
+                     the fallen guard's eyes go to the mysterious stim grabbing the chance you ask what it is, he explains that it is classified infomation
                      of this facility so he cannot disclose it, so... you ask if he doesn't want it than? afterall can't use something with the possebility of turning 
                      you into one of THOSE abominations that are slowely makking their way to us RIGHT NOW... the guard getting your point immediatly says that 
                      there is no need for worry for the stimulant is not one to carry such risks. It does however regenerate lost limbs...
                      this miracle medicne is one of the byproducts of the research done here.
                      And just the thing this man needs, as his hand is gone his arm wounded and his legs... eaten. 
                      Sadly the guard can no longer stay conscious due to all the blood he lsot, hell it's a wonder he's even ALIVE. Without a doubt he'll make a fine pawn.
-                     But... hwo close was the monster again? Might've been smarter to keep better track of it but you got far too immersed into the guard's story
-                     that you actualy forgor about that behemoth of a beast. You turn around and... to no supprise make eye contact with it. You immediatly grab the
+                     But... how close was the monster again? Might've been smarter to keep better track of it but you got far too immersed into the guard's story
+                     that you actualy forgot about that behemoth of a beast. You turn around and... to no supprise make eye contact with it. You immediatly grab the
                      guard's gun and start blasting at its eyes the giant beast blocks its own face with it's large grotesque arms and comes closer whilst being truly 
                      pissed off at you. It lets out a thunderous roar and starts sprinting. Will you end up like the guard next to you? Or will you survive long enough for
                      the other guards to appear...
@@ -273,11 +273,11 @@ namespace TextBasedAdventureGame
 
                           SubChoiseSecurity 2
 
-                          A. Going on the offesnive and face the odds.
+                          A. Going on the offense and face the odds.
                           [For those that will live and for those that have fallen ending]
 
                               You and the guys prepare yourself... it's time for a slaughter and the ones on the chopping blcok are those grotesque creatures.
-                              You take the lead and search for The Stalker's nest... you pass by the medicalbay and you feel it, it's here.
+                              You take the lead and search for The Stalker's nest... you pass by the medical bay and you feel it, it's here.
                               The beast dargs away your men, one. by. one. no fight nor gunshot the only thing left is a scream echoing in the distance.
                               You gather your pawns... No, your brothers and go towards the sounds of the fallen. Only to be met with the scene of death... that twisted beast hadn't eaten one
                               of them... he hanged them on the walls or sadisticly torn them limb for limb... It was toying with you and wanted to drown you in despair before eating you

@@ -36,8 +36,16 @@ namespace TextBasedAdventureGame
         }
 
 
+        public void SendingBool1()
+        {
+            base.SendBool1(decision);
+        }
 
 
+        public void SendingBool2()
+        {
+            base.SendBool2(decision);
+        }
 
 
 
