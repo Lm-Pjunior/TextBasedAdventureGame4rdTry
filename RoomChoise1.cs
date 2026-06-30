@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextBasedAdventureGame
 {
-    internal class RoomChoise1 : ChooseDecision
+    public class RoomChoise1 : ChooseDecision
     {
         // friend = false; // choise B
         // baton = false; //choise D
@@ -64,8 +64,11 @@ namespace TextBasedAdventureGame
                     _looping = false;
                     //instatiate storyline
 
-
                     }
+                    if(decision == "paths" ||  decision == "Paths")
+                {
+                    ShowPaths();
+                }
                 }
       }
       
@@ -98,6 +101,11 @@ namespace TextBasedAdventureGame
         public void ClearText()
         {
             base.ClearFunction();
+        }
+
+        public override void ShowPaths()
+        {
+            Console.WriteLine("The 2 endings obtainable here are: [Mercy kill] and [Fired]");
         }
 
 

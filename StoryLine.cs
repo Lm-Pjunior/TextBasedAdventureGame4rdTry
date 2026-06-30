@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextBasedAdventureGame
 {
-    internal class StoryLine
+    public class StoryLine
     {
         // "\r\n basicly means ''here is an enter'"
 
@@ -48,15 +48,11 @@ namespace TextBasedAdventureGame
             SecurityRoomCoward();
             }
              
-            if ( = true)
+            if (masterOfPawns = true)
             {
                 instatiATEthingss();
             }
             
-            if ( = true)
-            {
-                instantiatethings();
-            }
             */
 
 
@@ -113,6 +109,7 @@ namespace TextBasedAdventureGame
                 "  alone for now, as you need ammo for it taking it with you now will only hinder your movement. Only 3 corpses left to search.\r\n\r\n  " +
                 "   You make your way to the next corpse and grab its tattered jacket in order to search its contents as there is no belt or lower body to mention.\r\n  " +
                 "   As you put your hand in the pocket you get attacked, in a hurry you turn around.");
+            GeneratorRoomSplit();
         }
 
         public void GeneratorRoomSplit() //not done yet have to make a bool function implement it by the if as condition and than remove the comment bits

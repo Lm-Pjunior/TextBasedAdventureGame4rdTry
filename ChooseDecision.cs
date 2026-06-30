@@ -9,7 +9,7 @@ namespace TextBasedAdventureGame
     public abstract class ChooseDecision
     {
         protected string decision;
-
+        protected StoryLine storyLine = new StoryLine();
 
        
         
@@ -71,6 +71,8 @@ namespace TextBasedAdventureGame
                 Console.Clear();
             }
         }
+
+        public abstract void ShowPaths();
         
 
         /*
