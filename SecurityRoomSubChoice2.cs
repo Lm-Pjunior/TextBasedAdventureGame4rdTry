@@ -41,16 +41,7 @@ namespace TextBasedAdventureGame
                 }
             }
         }
-        public void SendingBoolCoward()
-        {
-            base.SendBool1(decision);
-        }
-
-
-        public void SendBoolPawnMaster()
-        {
-            base.SendBool2(decision);
-        }
+       
 
 
 

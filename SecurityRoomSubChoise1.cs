@@ -51,17 +51,7 @@ namespace TextBasedAdventureGame
                 }
             }
         }
-                public void SendingGen()
-        {
-            base.SendBool1(decision);
-        }
-
-
-        public void SendingSecRo()
-        {
-            base.SendBool2(decision);
-        }
-
+    
 
 
         public void ClearText()
