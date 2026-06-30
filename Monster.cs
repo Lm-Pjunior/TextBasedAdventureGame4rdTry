@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace TextBasedAdventureGame
 {
-    internal abstract class Monster
+    public abstract class Monster
     {
         private string _name;
         private string _desc;
         private string _attackType;
-        private string _spawnRegion;
 
-        public Monster(string name, string desc, string attackType, string spawnRegion)
+        public Monster(string name, string desc, string attackType)
         {
             _name = name;
             _desc = desc;
@@ -23,13 +22,13 @@ namespace TextBasedAdventureGame
         {
             Console.WriteLine($"A {_name} appeared.");
         }
-        public void BeastAppearance()
+        public void BeastDesc()
         {
             Console.WriteLine(_desc);
         }
         public void Attack()
         {
-
+            Console.WriteLine(_attackType);
         }
     }
 }
