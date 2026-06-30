@@ -23,6 +23,16 @@ namespace TextBasedAdventureGame
                   */
         }
 
-      
-      }
+
+
+
+
+
+
+        public void ClearText()
+        {
+            base.ClearFunction();
+        }
+
+    }
     }

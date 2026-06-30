@@ -46,6 +46,15 @@ namespace TextBasedAdventureGame
             return false;
         }
 
+        protected void ClearFunction()
+        {
+            if (decision == "clear" || decision == "Clear" || decision == "CLEAR")
+            {
+                Console.Clear();
+            }
+        }
+        
+
         /*
   Rooms
 

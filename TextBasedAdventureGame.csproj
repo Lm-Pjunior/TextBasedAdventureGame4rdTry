@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChooseDecision.cs" />
-    <Compile Include="Inheritance.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="OutsideFacility.cs" />
     <Compile Include="Program.cs" />

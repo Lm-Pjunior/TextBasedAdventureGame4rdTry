@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace TextBasedAdventureGame
 {
     internal class Program
-    {//copy on over from the other 1 as this will be the version i NEED
-        
+    {
+        static void Main(string[] args)
+        {
+        }
     }
 }

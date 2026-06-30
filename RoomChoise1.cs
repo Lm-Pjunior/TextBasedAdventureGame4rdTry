@@ -11,13 +11,13 @@ namespace TextBasedAdventureGame
         // friend = false; // choise B
         // baton = false; //choise D
 
-        private bool looping = true;
+        private bool _looping = true;
         //decision A results in a bullet through the head
         //choise C in getting fired
         private StoryLine _story = new StoryLine();
         public override void Decisions()
         {
-            while (looping) {
+            while (_looping) {
                 {
                     decision = Console.ReadLine();
                     
@@ -32,7 +32,6 @@ namespace TextBasedAdventureGame
                         Console.WriteLine("");
                         Console.WriteLine("Press 'enter' to continue.");
                         Console.ReadLine();
-                        Console.Clear();
                     }
                     if (decision == "b" || decision == "B")
                     {
@@ -47,7 +46,6 @@ namespace TextBasedAdventureGame
                         Console.WriteLine("");
                         Console.WriteLine("Press 'enter' to continue.");
                         Console.ReadLine();
-                        Console.Clear();
                     }
                     if (decision == "d" || decision == "D")
                     {
@@ -81,6 +79,12 @@ namespace TextBasedAdventureGame
                 return false;
             }
         }
+
+        public void ClearText()
+        {
+            base.ClearFunction();
+        }
+
 
         /*
     Decisions

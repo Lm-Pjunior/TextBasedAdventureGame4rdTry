@@ -8,6 +8,7 @@ namespace TextBasedAdventureGame
 {
     internal class StoryLine
     {
+        // "\r\n basicly means ''here is an enter'"
 
         //idea on what to do: basicly i could make a while loop for each action you do and you could call a fucntion that shows what path you're on
         //and than you press enter and do the qeustion again due to a while loop
@@ -62,15 +63,18 @@ namespace TextBasedAdventureGame
                 "        You run through the hallway huffing and puffing. Yet you have an omminous feeling of being watched, by every step your doubts grow... what is it?\r\n         " +
                 "     What is following me? But... you made it, you're at the medicalbay. At last, freedom from this accursed feeling...\r\n          " +
                 "    As time went on, you grew hungry and scared... is it still there? what, WHAT is this feeling gnawing at the back of my head...");
+            Console.WriteLine("Press 'enter' to continue.");
             Console.ReadLine();
-            Console.Clear();
 
             Console.WriteLine("W H A T  D O  I  D O . . .\r\n\r\n ");
+            Console.WriteLine("Press 'enter' to continue.");
             Console.ReadLine();
+
             Console.WriteLine("Your sanity is leaving you, you're out of food, sleep deprived and paranoid... you hallucinate and your world is anything but desirable.\r\n       " +
                 "       A creature known as The Stalker that does not tire and does not need to eat has been with you, toying with you and your tired soul.\r\n        " +
                 "      It had noticed your heavy footsteps near its lair... you shouldn't have ran... you should've stayed and saved the man... but alas, you didn't and now... you die\r\n       " +
-                "       because of it. [Death is a mercy ending achieved]");
+                "       because of it. [Death is a mercy ending achieved] \r\n");
+            Console.ReadLine();
         }
 
 
@@ -271,7 +275,7 @@ namespace TextBasedAdventureGame
                       You gather your pawns... No, your brothers and go towards the sounds of the fallen. Only to be met with the scene of death... that twisted beast hadn't eaten one
                       of them... he hanged them on the walls or sadisticly torn them limb for limb... It was toying with you and wanted to drown you in despair before eating you
                       so... it gave you a gift... soem of your brothers... weren't graced by death their bodies had been thrown into fires and their wounds cauterized... they were alive
-                      without any limbs. They served the ebast one purpose and one purpose alone... instilling despair on your remaining brothers. It would dig into their flesh to make
+                      without any limbs. They served the beast one purpose and one purpose alone... instilling despair on your remaining brothers. It would dig into their flesh to make
                       them scream slowely gutting them infront of your eyes... 
                       your brothers no longer being able to handle this scene grabbed their guns and started shooting the beast...
                       It used the corpses and those alive as shields and advanced towards us ccutting us one... by... one many of us lsot our lives.
