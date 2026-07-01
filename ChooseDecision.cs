@@ -9,7 +9,7 @@ namespace TextBasedAdventureGame
     public abstract class ChooseDecision
     {
         protected string decision;
-
+        protected StoryLine _storyLine = new StoryLine();
 
        
         
@@ -34,17 +34,17 @@ namespace TextBasedAdventureGame
         }
         */
 
-        public virtual bool SendBool1(string decision)
+       
+        protected void ClearFunction()
         {
-            return false;
+            if (decision == "clear" || decision == "Clear" || decision == "CLEAR")
+            {
+                Console.Clear();
+            }
         }
 
-
-
-        public virtual bool SendBool2(string decision)
-        {
-            return false;
-        }
+        public abstract void ShowPaths();
+        
 
         /*
   Rooms
