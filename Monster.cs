@@ -8,17 +8,17 @@ namespace TextBasedAdventureGame
 {
     public abstract class Monster
     {
-        private string _name;
-        private string _desc;
-        private string _attackType;
+        protected string _name;
+        protected string _desc;
+        protected string _attackType;
 
-        public Monster(string name, string desc, string attackType)
+        public Monster(string name, string desc, string attack)
         {
             _name = name;
             _desc = desc;
-            _attackType = attackType;
+            _attackType = attack;
         }
-        public void CreatureSpawn()
+        public virtual void CreatureSpawn()
         {
             Console.WriteLine($"A {_name} appeared.");
         }

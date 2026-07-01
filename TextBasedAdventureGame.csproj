@@ -53,6 +53,7 @@
     <Compile Include="SecurityRoomSubChoice2.cs" />
     <Compile Include="SecurityRoomSubChoise1.cs" />
     <Compile Include="StoryLine.cs" />
+    <Compile Include="TwistedOne.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
