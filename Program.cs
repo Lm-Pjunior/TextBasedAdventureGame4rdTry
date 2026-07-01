@@ -8,9 +8,9 @@ namespace TextBasedAdventureGame
 {
     internal class Program
     {
-        private StoryLine _story = new StoryLine();
-        private bool _looping = true;
-        public void Main(string[] args)
+        private static StoryLine _story = new StoryLine();
+        private static bool _looping = true;
+        static void Main(string[] args)
         {
 
             while (_looping)

@@ -17,7 +17,6 @@ namespace TextBasedAdventureGame
         private bool _zappingStick = false;
         //decision A results in a bullet through the head
         //choise C in getting fired
-        private StoryLine _story = new StoryLine();
         public override void Decisions()
         {
             while (_looping) {
@@ -78,7 +77,7 @@ namespace TextBasedAdventureGame
                         _friend = true;
                         _looping2 = false;
                         _looping = false;
-                        _story.AlarmBit();
+                        //_storyLine.AlarmBit();
                     }
                     if (decision == "paths" || decision == "Paths")
                     {
@@ -110,7 +109,7 @@ namespace TextBasedAdventureGame
                     Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
                     _zappingStick = true;
                     _looping = false;
-                    _story.AlarmBit();
+                    //_storyLine.AlarmBit();
 
 
                 }
@@ -126,12 +125,12 @@ namespace TextBasedAdventureGame
       }
       
         
-        public bool SendBool1(bool friend)
+        public override bool SendBool1(bool friend)
         {
 
             return _friend;
         }
-        public bool SendBool2(bool weapon)
+        public override bool SendBool2(bool weapon)
         {
             return _zappingStick;
         }

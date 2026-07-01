@@ -13,6 +13,7 @@ namespace TextBasedAdventureGame
     
     public class StoryLine
     {
+        //it needs bool functions for the storyline.
         private RoomChoise1 _choise1 = new RoomChoise1();
         private RoomChoise2 _choise2 = new RoomChoise2();
         private SecurityRoomSubChoise1 _securityRoomSubChoise1 = new SecurityRoomSubChoise1();

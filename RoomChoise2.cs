@@ -24,13 +24,13 @@ namespace TextBasedAdventureGame
                 decision = Console.ReadLine();
                 if (decision == "a" || decision == "A")
                 {
-                    _storyLine.GeneratorRoom();
+                    //_storyLine.GeneratorRoom();
                     _looping = false;
                 }
 
                 if (decision == "b" || decision == "B")
                 {
-                    _storyLine.SecurityRoom1();
+                    //_storyLine.SecurityRoom1();
                     _looping = false;
                 }
                 if(decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")

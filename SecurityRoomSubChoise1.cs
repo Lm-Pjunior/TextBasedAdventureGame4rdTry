@@ -25,7 +25,7 @@ namespace TextBasedAdventureGame
 
                     _looping = false;
                     Console.ReadLine();
-                    _storyLine.SecurityRoomCoward();
+                    //_storyLine.SecurityRoomCoward();
                 }
                 if (decision == "b" || decision == "B")
                 {
@@ -33,7 +33,7 @@ namespace TextBasedAdventureGame
 
                     _looping = false;
                     Console.ReadLine();
-                    _storyLine.SecurityRoomPawnMaster();
+                    //_storyLine.SecurityRoomPawnMaster();
 
 
                 }

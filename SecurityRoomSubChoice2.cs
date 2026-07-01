@@ -20,7 +20,7 @@ namespace TextBasedAdventureGame
                 if (decision == "a" || decision == "A")
                 {
                     _looping = false;
-                    _storyLine.HeroicSacrifice();
+                   // _storyLine.HeroicSacrifice();
                     
                     Console.ReadLine();
                     
@@ -28,7 +28,7 @@ namespace TextBasedAdventureGame
                 if (decision == "b" || decision == "B")
                 {
                     _looping = false;
-                    _storyLine.GrandmasterOfWar();
+                   // _storyLine.GrandmasterOfWar();
 
                     Console.ReadLine();
 
