@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextBasedAdventureGame
 {
-<<<<<<< Updated upstream
-    internal class StoryLine
-    {
-=======
+    
     
     public class StoryLine
     {
@@ -18,14 +15,7 @@ namespace TextBasedAdventureGame
         private SecurityRoomSubChoise1 _securityRoomSubChoise1 = new SecurityRoomSubChoise1();
         private SecurityRoomSubChoice2 _securityRoomSubChoice2 = new SecurityRoomSubChoice2();
         
-        // "\r\n basicly means ''here is an enter'"
->>>>>>> Stashed changes
 
-        //idea on what to do: basicly i could make a while loop for each action you do and you could call a fucntion that shows what path you're on
-        //and than you press enter and do the qeustion again due to a while loop
-
-<<<<<<< Updated upstream
-=======
         public void BeginStory()
         {
            Console.WriteLine("You're here for an intake to this secretive fqacility...\r\n" +
@@ -42,7 +32,6 @@ namespace TextBasedAdventureGame
 
         }
 
->>>>>>> Stashed changes
         public void RoomChoise1()
         {
 
@@ -62,39 +51,22 @@ namespace TextBasedAdventureGame
                 "You take 2 medkits with you but they hold some unfamiliar medical supploes... it has to be something good afterall this place has some serious tech.\r\n    " +
                 " You sadly didn't find any keycards but decide to go onwards anyways... maybe you'll have better luck by the next desitantion.\r\n\r\n   " +
                 "  You walk through the hallways once more navigating with the map that the instructor had given you. Albeit not as functional due to the rampage \r\n" +
-                "     that went through these hallways... after a while you start voices, are you finally going insane from all the mental fatigue? Or is there actualy\r\n  " +
+                "     that went through these hallways... after a while you start hearing a voice, are you finally going insane from all the mental fatigue? Or is there actualy\r\n  " +
                 "   something there, " +
-<<<<<<< Updated upstream
                 "The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing\r\n    " +
                 " there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?");
+                
+                _securityRoomSubChoise1.Decisions();
 
-            /*
-            if(coward = true)
-            {
-            SecurityRoomCoward();
+
+
             }
-             
-            if ( = true)
-            {
-                instatiATEthingss();
-            }
-            
-            if ( = true)
-            {
-                instantiatethings();
-            }
-            */
 
+                
 
-        }
-=======
-                "The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing\r\n");
-            _securityRoomSubChoise1 .Decisions();
-
-        }
+        
 
        
->>>>>>> Stashed changes
 
         public void SecurityRoomCoward()
         {
@@ -233,12 +205,10 @@ namespace TextBasedAdventureGame
                 "  alone for now, as you need ammo for it taking it with you now will only hinder your movement. Only 3 corpses left to search.\r\n\r\n  " +
                 "   You make your way to the next corpse and grab its tattered jacket in order to search its contents as there is no belt or lower body to mention.\r\n  " +
                 "   As you put your hand in the pocket you get attacked, in a hurry you turn around.");
-<<<<<<< Updated upstream
-=======
+
             Console.ReadLine();
 
             GeneratorRoomSplit();
->>>>>>> Stashed changes
         }
 
         public void GeneratorRoomSplit() //not done yet have to make a bool function implement it by the if as condition and than remove the comment bits
