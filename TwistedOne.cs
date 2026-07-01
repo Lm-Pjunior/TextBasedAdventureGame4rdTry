@@ -8,7 +8,7 @@ namespace TextBasedAdventureGame
 {
     internal class TwistedOne : Monster
     {
-        public TwistedOne(string name, string desc, string attack) : base(name, desc, attack)
+        public TwistedOne(string name, string desc, string attackStory) : base(name, desc, attackStory)
         {
         }
         /*

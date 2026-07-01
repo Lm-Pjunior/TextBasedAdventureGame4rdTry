@@ -10,13 +10,13 @@ namespace TextBasedAdventureGame
     {
         protected string _name;
         protected string _desc;
-        protected string _attackType;
+        protected string _attackStory;
 
-        public Monster(string name, string desc, string attack)
+        public Monster(string name, string desc, string attackStory)
         {
             _name = name;
             _desc = desc;
-            _attackType = attack;
+            _attackStory = attackStory;
         }
         public virtual void CreatureSpawn()
         {
@@ -28,7 +28,7 @@ namespace TextBasedAdventureGame
         }
         public void Attack()
         {
-            Console.WriteLine(_attackType);
+            Console.WriteLine(_attackStory);
         }
     }
 }

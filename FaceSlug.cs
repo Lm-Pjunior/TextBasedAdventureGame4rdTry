@@ -11,7 +11,7 @@ namespace TextBasedAdventureGame
 {
     public class FaceSlug : Monster
     {
-        public FaceSlug(string name, string desc, string attack) : base(name, desc, attack)
+        public FaceSlug(string name, string desc, string attackStory) : base(name, desc, attackStory)
         {
         }
         /*
