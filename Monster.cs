@@ -12,7 +12,7 @@ namespace TextBasedAdventureGame
         private string _desc;
         private string _attackType;
         private string _spawnRegion;
-
+        //quik fix for a merge error
         public Monster(string name, string desc, string attackType, string spawnRegion)
         {
             _name = name;
