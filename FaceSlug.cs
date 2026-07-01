@@ -21,7 +21,7 @@ namespace TextBasedAdventureGame
         
         desc 
 
-          "a hideous abomination whoms exterior is made out of thousands of shriveled up human faces, its liquid guts made out of pulverized flesh and organs and wherever it goes it leaves a trail of oil and pus..." +
+          "It's hideous abomination whoms exterior is made out of thousands of shriveled up human faces, its liquid guts made out of pulverized flesh and organs and wherever it goes it leaves a trail of oil and pus..." +
         "It among the slower abominations of this facility but it can take quite the hit"
           
         attack
@@ -34,7 +34,7 @@ namespace TextBasedAdventureGame
 
         public override void CreatureSpawn()
         {
-            Console.WriteLine($" {_name} appeared.");
+            Console.WriteLine($" A singular {_name} showed up after the Twisted Ones were dead... we prepared for a fight.");
         }
         public void Description()
         {

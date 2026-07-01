@@ -29,7 +29,19 @@ namespace TextBasedAdventureGame
         From there on you only need to crush their skull with the exo-skeleton, we put them out of their misery but one of exo skeletons got damaged in the proccess...
         it would be best to get some repairs done to our weapons
         */
+        public override void CreatureSpawn()
+        {
+            base.CreatureSpawn();
+        }
+        public void Description()
+        {
+            base.BeastDesc();
 
+        }
+        public void Mauling()
+        {
+            base.Attack();
+        }
 
 
     }

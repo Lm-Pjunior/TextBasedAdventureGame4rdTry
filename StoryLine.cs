@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace TextBasedAdventureGame
 {
@@ -14,7 +17,27 @@ namespace TextBasedAdventureGame
         private RoomChoise2 _choise2 = new RoomChoise2();
         private SecurityRoomSubChoise1 _securityRoomSubChoise1 = new SecurityRoomSubChoise1();
         private SecurityRoomSubChoice2 _securityRoomSubChoice2 = new SecurityRoomSubChoice2();
-        
+        private FaceSlug _slug = new FaceSlug("FaceSlug",
+
+            "It's hideous abomination whoms exterior is made out of thousands of shriveled up human faces," +
+            " its liquid guts made out of pulverized flesh and organs and wherever it goes it leaves a trail of oil and pus...\r\n"  +
+            "It among the slower abominations of this facility but it can take quite the hit",
+
+            "that overgrown slug spits its slime over the enemy" +
+            " and than throws up his eternal organs over him wich also have an adhesive agent and as my soldiers were rendered immobile...\r\n   " +
+            "     then it came over and swallowed them whole crushing them within its body and growing even more");
+
+        private TwistedOne _twisted = new TwistedOne("Twisted Ones"
+
+            , "A creature that vaguely resembles a duckling, yellowe feathers stained in red, twisted legs and a twisted neck... a monstosity that is cursed to look downwards.\r\n     " +
+            "     It has 2 beaks one on his face and the other on his cheek... it has a lot of needle like teeth and a long tongue with multiple tendrils on it...\r\n       " +
+            "   It has 3 legs 2 of wich a large, twisted with some of its toes broken with the bone sticking out. The other leg is underdeveloped and cannot be used."
+            
+            , "The twisted Ones only have 2 things going for them and that's their numbers and vitality since they have high regeneration... which brings them endless agony.\r\n        " +
+            "  They only die when their undeveloped leg is pulled off of their torso, this results in their guts spilling and their lives slipping.\r\n   " +
+            "       From there on you only need to crush their skull with the exo-skeleton, we put them out of their misery but one of exo skeletons got damaged in the proccess...\r\n      " +
+            "    it would be best to get some repairs done to our weapons");
+
 
         public void BeginStory()
         {
@@ -173,9 +196,10 @@ namespace TextBasedAdventureGame
                 "    Truly a pity that no one was stationed there before mayby than... things wouldn't have reached this point... but a pleasant supprise to get my hands on these anyways.\r\n                          " +
                 "    Makes one truly wonder how many more secrets are being kept here.\r\n\r\n                              " +
                 "The beast had finished its final struggle... and now all that remained was the stench of blood and dozens of corpses... but a victory nontheless. You decide to further\r\n                              " +
-                "your advances in order to kill many more beasts to come and discover the secrets that this facility holds... and grow your strenght in the process.\r\n\r\n\r\n     " +
-                "                        " +
-                " ...(use the inheritance class here. it's a wave type omething like day 1 than instantiate the monster)");
+                "your advances in order to kill many more beasts to come and discover the secrets that this facility holds... and grow your strenght in the process.\r\n\r\n\r\n");
+            Console.ReadLine();
+
+            Console.WriteLine($"");
         }
 
 
