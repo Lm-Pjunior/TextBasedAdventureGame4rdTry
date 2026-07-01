@@ -68,7 +68,6 @@ namespace TextBasedAdventureGame
 
                         _looping2 = false;
                         _looping = false;
-                        //instatniate the alarm bit here
                     }
                         if(decision == "b" || decision == "B")
                     {
@@ -79,7 +78,7 @@ namespace TextBasedAdventureGame
                         _friend = true;
                         _looping2 = false;
                         _looping = false;
-                        //instatniate the alarm bit here
+                        _story.AlarmBit();
                     }
                     if (decision == "paths" || decision == "Paths")
                     {
@@ -111,9 +110,10 @@ namespace TextBasedAdventureGame
                     Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
                     _zappingStick = true;
                     _looping = false;
-                    //instatiate storyline
+                    _story.AlarmBit();
 
-                    }
+
+                }
                     if(decision == "paths" ||  decision == "Paths" || decision == "route" || decision == "Route")
                 {
                     ShowPaths();

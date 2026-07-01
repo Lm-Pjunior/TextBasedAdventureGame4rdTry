@@ -27,18 +27,11 @@ namespace TextBasedAdventureGame
 
             _choise1.Decisions();
 
-
-
-
         }
 
-        public void RoomChoise1()
+        public void AlarmBit()
         {
-
-        }
-        public void RoomChoise2()
-        {
-
+            _choise2.Decisions();
         }
 
         public void SecurityRoom1()
