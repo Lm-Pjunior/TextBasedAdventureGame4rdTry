@@ -17,40 +17,33 @@ namespace TextBasedAdventureGame
                 Console.WriteLine("After you make your back to the instructor you suddenly hear the alarms go off and the lights go out... the generator has been destroyed. The instructor organises the cadets and tells you\r\n" +
                     "to take some supplies and assist the guards... where will you go?\r\n\r\n" +
                     "A. Generator.\r\n" +
-                    "B. Security room\r\n");
+                    "B. Security room\r\n\r\n" +
+                    "Type down you choice... 'A', 'B', 'C' or 'D'\r\n                      " +
+                    "You can also type down clear to 'clear' the texts or 'paths' to show possible endings within the choices\r\n");
 
                 decision = Console.ReadLine();
                 if (decision == "a" || decision == "A")
                 {
+                    _storyLine.GeneratorRoom();
                     _looping = false;
-                    storyLine.GeneratorRoom();
                 }
 
                 if (decision == "b" || decision == "B")
                 {
+                    _storyLine.SecurityRoom1();
                     _looping = false;
-                    //instantiate securityroom run
                 }
-                if(decision == "paths" || decision == "Paths")
+                if(decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")
                 {
                     ShowPaths();
+                }
+                if (decision == "clear" || decision == "Clear")
+                {
+                    ClearText();
                 }
             }
             
         }
-
-
-        public void SendingGen()
-        {
-            base.SendBool1(decision);
-        }
-
-
-        public void SendingSecRo()
-        {
-            base.SendBool2(decision);
-        }
-
 
 
         public void ClearText()
@@ -60,7 +53,7 @@ namespace TextBasedAdventureGame
 
         public override void ShowPaths()
         {
-            Console.WriteLine("Only 1 choice leads to more whilst the other is a [Suicidal mission]");
+            Console.WriteLine("Only 1 choice leads to more whilst the other is a [Suicidal mission]... altough your end depends on what you've chosen");
         }
     }
     }

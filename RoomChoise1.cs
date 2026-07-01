@@ -12,6 +12,9 @@ namespace TextBasedAdventureGame
         // baton = false; //choise D
 
         private bool _looping = true;
+        private bool _looping2 = true;
+        private bool _friend = false;
+        private bool _zappingStick = false;
         //decision A results in a bullet through the head
         //choise C in getting fired
         private StoryLine _story = new StoryLine();
@@ -19,6 +22,14 @@ namespace TextBasedAdventureGame
         {
             while (_looping) {
                 {
+                    Console.WriteLine("The instructor hands you a map so you can find your way around the facility evrything is marked but you don't have acces to basicly anything.\r\n" +
+                        "Where will you go?\r\n" +
+                        "A. The shooting range\r\n" +
+                        "B. The logings \r\n" +
+                        "C. Outside the facility\r\n" +
+                        "D. The armory\r\n\r\n" +
+                        "Type down you choice... 'A', 'B', 'C' or 'D'\r\n" +
+                        "You can also type down clear to 'clear' the texts or 'paths' to show possible endings within the choices\r\n");
                     decision = Console.ReadLine();
                     
                     }
@@ -36,13 +47,50 @@ namespace TextBasedAdventureGame
 
                 }
                 if (decision == "b" || decision == "B")
+                {
+
+                    while (_looping2)
                     {
-                      _looping = false;
-                      //instatiate storyline
+                        Console.WriteLine("You decide to go to the logings in advance.\r\n" +
+                            "Afterall it might be nice to see the place you'll be staying at for a while.\r\n" +
+                            "You enter the room and meet your new roommate but how will you greet him:\r\n" +
+                            "A. Uppercut to the face.\r\n" +
+                            "B. Demand to at the top of the bunkbed!" +
+                            "Type down you choice... 'A', 'B', 'C' or 'D'\r\n" +
+                            "You can also type down clear to 'clear' the texts or 'paths' to show possible endings within the choices\r\n");
 
-
+                        decision = Console.ReadLine();
                     }
+                        if(decision == "a" || decision == "A")
+                      {
+                           Console.WriteLine("You uppercut him hard enough to shatter a bit of his teeth... his dentist won't be happy and nor will he...\r\n" +
+                              "You have made your first enemy within this facility... happy now?");
 
+                        _looping2 = false;
+                        _looping = false;
+                        //instatniate the alarm bit here
+                    }
+                        if(decision == "b" || decision == "B")
+                    {
+                        Console.WriteLine("You expected a fight to the death but he was supprisingly glad... and he explains how the lower bunk is supperious\r\n" +
+                            "and thus begins the fight you were expecting... it was a truly stoic fight... of words, it was an argument... again.\r\n" +
+                            "But at the end of the day you gained a friend... your first friend within this facility... and maybe your last ofcourse this is something only we know.");
+
+                        _friend = true;
+                        _looping2 = false;
+                        _looping = false;
+                        //instatniate the alarm bit here
+                    }
+                    if (decision == "paths" || decision == "Paths")
+                    {
+                        ShowPaths();
+                    }
+                    if (decision == "clear" || decision == "Clear")
+                    {
+                        ClearText();
+                    }
+                }
+                          
 
                 if (decision == "c" || decision == "C")
                     {
@@ -61,41 +109,31 @@ namespace TextBasedAdventureGame
                     {
 
                     Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
+                    _zappingStick = true;
                     _looping = false;
                     //instatiate storyline
 
                     }
-                    if(decision == "paths" ||  decision == "Paths")
+                    if(decision == "paths" ||  decision == "Paths" || decision == "route" || decision == "Route")
                 {
                     ShowPaths();
+                }
+                    if(decision == "clear" || decision == "Clear")
+                {
+                    ClearText();
                 }
                 }
       }
       
         
-        public override bool SendBool1(string decision)
+        public bool SendBool1(bool friend)
         {
 
-            if (decision == "b" || decision == "B")
-            {
-                return true;
-
-            }
-            else
-            {
-                return false;
-            }
+            return _friend;
         }
-        public override bool SendBool2(string decision)
+        public bool SendBool2(bool weapon)
         {
-            if (decision == "d" || decision == "D")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return _zappingStick;
         }
 
         public void ClearText()
@@ -105,30 +143,11 @@ namespace TextBasedAdventureGame
 
         public override void ShowPaths()
         {
-            Console.WriteLine("The 2 endings obtainable here are: [Mercy kill] and [Fired]");
+            Console.WriteLine("The 2 choices [Mercy kill] and [Fired] and the other 2 might save ones life... depending on what you do ofcourse");
         }
 
 
-        /*
-    Decisions
-     {
-     Console.WriteLine(des1);
-     Console.WriteLine(des2);
-     if (des3 != null)
-     {
-         Console.WriteLine(des3);
-     }
-     if (des4 != null)
-     {
-         Console.WriteLine(des4);
-     }
-    deciding = Console.ReadLine();
-    if(deciding == "a" || deciding == "A")
-     {
-         Console.WriteLine("");
-     }
- }
- */
+        
     }
 
 

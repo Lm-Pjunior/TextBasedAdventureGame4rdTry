@@ -14,16 +14,18 @@ namespace TextBasedAdventureGame
             while (_looping)
             {
                 {
+                    Console.WriteLine(" there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?");
                     decision = Console.ReadLine();
 
                 }
                 if (decision == "a" || decision == "A")
                 {
-                    Console.WriteLine("");
+                    
 
 
                     _looping = false;
                     Console.ReadLine();
+                    _storyLine.SecurityRoomCoward();
                 }
                 if (decision == "b" || decision == "B")
                 {
@@ -31,29 +33,25 @@ namespace TextBasedAdventureGame
 
                     _looping = false;
                     Console.ReadLine();
+                    _storyLine.SecurityRoomPawnMaster();
 
 
                 }
 
 
-                if (decision == "c" || decision == "C")
-                {
-                    Console.WriteLine("");
-
-
-                    _looping = false;
-                    Console.ReadLine();
-
-                }
-                if (decision == "paths" || decision == "Paths")
+                if (decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")
                 {
                     ShowPaths();
                 }
+                if (decision == "clear" || decision == "Clear")
+                {
+                    ClearText();
+                }
             }
         }
-    
 
 
+       
         public void ClearText()
         {
             base.ClearFunction();
@@ -61,7 +59,8 @@ namespace TextBasedAdventureGame
 
         public override void ShowPaths()
         {
-            Console.WriteLine("");
+            Console.WriteLine("one choice leads to life but by the other path... [Death is a mercy] \r\n" +
+                " be sure to doubt and distrust and you will get to the right ending for yourself");
         }
     }
 }

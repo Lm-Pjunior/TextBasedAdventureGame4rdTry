@@ -9,7 +9,7 @@ namespace TextBasedAdventureGame
     public abstract class ChooseDecision
     {
         protected string decision;
-        protected StoryLine storyLine = new StoryLine();
+        protected StoryLine _storyLine = new StoryLine();
 
        
         
@@ -34,36 +34,7 @@ namespace TextBasedAdventureGame
         }
         */
 
-        public virtual bool SendBool1(string decision)
-        {
-
-            if (decision == "a" || decision == "A")
-            {
-                return true;
-
-            }
-            else
-            {
-                return false;
-            }
-        }        
-
-
-
-        public virtual bool SendBool2(string decision)
-        {
-
-            if (decision == "b" || decision == "B")
-            {
-                return true;
-
-            }
-            else
-            {
-                return false;
-            }
-        }
-
+       
         protected void ClearFunction()
         {
             if (decision == "clear" || decision == "Clear" || decision == "CLEAR")

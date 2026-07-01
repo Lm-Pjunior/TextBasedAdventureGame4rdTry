@@ -19,31 +19,35 @@ namespace TextBasedAdventureGame
                 }
                 if (decision == "a" || decision == "A")
                 {
-                    Console.WriteLine("");
-
-
                     _looping = false;
+                    _storyLine.HeroicSacrifice();
+                    
                     Console.ReadLine();
+                    
                 }
                 if (decision == "b" || decision == "B")
                 {
-                    Console.WriteLine("");
-
                     _looping = false;
+                    _storyLine.GrandmasterOfWar();
+
                     Console.ReadLine();
 
                 }
 
 
-                if (decision == "paths" || decision == "Paths")
+                if (decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")
                 {
                     ShowPaths();
                 }
+                if (decision == "clear" || decision == "Clear")
+                {
+                    ClearText();
+                }
             }
         }
-       
 
 
+        
 
         public void ClearText()
         {
@@ -52,7 +56,7 @@ namespace TextBasedAdventureGame
 
         public override void ShowPaths()
         {
-            Console.WriteLine("");
+            Console.WriteLine("2 choices 3 endings... [For those that will live and for those that have fallen], [Human sacrifice] or [Grandmaster of war]");
         }
     }
 }
