@@ -199,7 +199,22 @@ namespace TextBasedAdventureGame
                 "your advances in order to kill many more beasts to come and discover the secrets that this facility holds... and grow your strenght in the process.\r\n\r\n\r\n");
             Console.ReadLine();
 
-            Console.WriteLine($"");
+            Console.WriteLine($"You travel through the hallwaws on search for people and riches but instead...");
+            _twisted.CreatureSpawn();
+            _twisted.Description();
+            _twisted.AttackStory();
+
+            Console.ReadLine();
+
+            _slug.CreatureSpawn();
+            _slug.Description();
+            _slug.AttackStory();
+
+            Console.WriteLine("A while pass and your forces have grown, your treasures boundless and the knowledge you gained as vast as the seas with this newfound foundation" +
+                " you decide to start your own mercenary corps\r\n" +
+                "goign through battles with your men aswell as having the old researchers help you find newer knowledge, you are however on the run for those that had caused this.\r\n" +
+                "But those fools have little going for them as you and your men easily deal with the enemy...\r\n" +
+                "[Grandmaster Of War ending achieved]");
         }
 
 

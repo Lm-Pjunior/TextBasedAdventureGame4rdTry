@@ -43,7 +43,7 @@ namespace TextBasedAdventureGame
         }
         public void Mauling()
         {
-            base.Attack();
+            base.AttackStory();
         }
 
     }

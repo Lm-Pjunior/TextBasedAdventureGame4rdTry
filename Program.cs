@@ -8,8 +8,15 @@ namespace TextBasedAdventureGame
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private StoryLine _story = new StoryLine();
+        private bool _looping = true;
+        public void Main(string[] args)
         {
+
+            while (_looping)
+            {
+                _story.BeginStory();
+            }
         }
     }
 }

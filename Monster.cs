@@ -26,7 +26,7 @@ namespace TextBasedAdventureGame
         {
             Console.WriteLine(_desc);
         }
-        public void Attack()
+        public void AttackStory()
         {
             Console.WriteLine(_attackStory);
         }
