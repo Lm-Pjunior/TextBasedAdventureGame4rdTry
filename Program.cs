@@ -13,10 +13,22 @@ namespace TextBasedAdventureGame
         static void Main(string[] args)
         {
 
+
             while (_looping)
             {
+                Console.WriteLine("Make sure to remember the controls as they won't be shown later for immersion reasons although you might see a 'press 'enter' to continue' \r\n" +
+                    "I hope you enjoy this 'game' and goodluck!\r\n\r\n" +
+                    "Press 'enter' to continue");
+                Console.ReadLine();
+                Console.Clear();
+
                 _story.BeginStory();
+                Console.WriteLine("\r\nThank you for playing.");
+                Console.ReadLine();
+
+                _looping = false;   
             }
+
         }
     }
 }

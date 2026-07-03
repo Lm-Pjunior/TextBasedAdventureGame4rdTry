@@ -5,34 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TextBasedAdventureGame
-{  //make for each room a void type function that allowes them to pick a choise
+{
     public abstract class ChooseDecision
     {
         protected string decision;
-        protected bool bool1;
-        protected bool bool2;
-       
+        protected bool _bool1;
+
         
         public abstract void Decisions();
-        /*
-            {
-            Console.WriteLine(des1);
-            Console.WriteLine(des2);
-            if (des3 != null)
-            {
-                Console.WriteLine(des3);
-            }
-            if (des4 != null)
-            {
-                Console.WriteLine(des4);
-            }
-           deciding = Console.ReadLine();
-           if(deciding == "a" || deciding == "A")
-            {
-                Console.WriteLine("");
-            }
-        }
-        */
+       
 
        
         protected void ClearFunction()
@@ -45,22 +26,10 @@ namespace TextBasedAdventureGame
 
         public abstract void ShowPaths();
         
-        public virtual bool SendBool1(bool bool1)
-        {
-            if(decision == "a" || decision == "A")
-            {
-                bool1 = true;
-            }
-            return bool1;
-        }
-        public virtual bool SendBool2(bool bool2)
-        {
-            if (decision == "b" || decision == "B")
-            {
-                bool2 = true;
-            }
-            return bool2;
 
+        public bool SendBool1(bool bool1)
+        {            
+            return bool1;
         }
 
         /*

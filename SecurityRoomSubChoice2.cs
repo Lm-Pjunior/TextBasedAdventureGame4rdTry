@@ -14,13 +14,16 @@ namespace TextBasedAdventureGame
             while (_looping)
             {
                 {
+                    _bool1 = false;
                     decision = Console.ReadLine();
 
                 }
                 if (decision == "a" || decision == "A")
                 {
                     _looping = false;
-                   // _storyLine.HeroicSacrifice();
+
+                    _bool1 = true;
+
                     
                     Console.ReadLine();
                     
@@ -28,7 +31,6 @@ namespace TextBasedAdventureGame
                 if (decision == "b" || decision == "B")
                 {
                     _looping = false;
-                   // _storyLine.GrandmasterOfWar();
 
                     Console.ReadLine();
 
@@ -46,7 +48,10 @@ namespace TextBasedAdventureGame
             }
         }
 
-
+        public bool Bool1(bool bool1)
+        {
+            return _bool1;
+        }
         
 
         public void ClearText()
@@ -56,7 +61,7 @@ namespace TextBasedAdventureGame
 
         public override void ShowPaths()
         {
-            Console.WriteLine("2 choices 3 endings... [For those that will live and for those that have fallen], [Human sacrifice] or [Grandmaster of war]");
+            Console.WriteLine("2 choices 3 endings... [For those that will live and for those that have fallen], [Human sacrifice] or [Grandmaster of war]\r\n");
         }
     }
 }
