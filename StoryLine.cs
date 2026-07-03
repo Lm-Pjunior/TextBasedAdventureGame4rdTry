@@ -22,22 +22,22 @@ namespace TextBasedAdventureGame
 
             "It's hideous abomination whoms exterior is made out of thousands of shriveled up human faces," +
             " its liquid guts made out of pulverized flesh and organs and wherever it goes it leaves a trail of oil and pus...\r\n"  +
-            "It among the slower abominations of this facility but it can take quite the hit",
+            " It among the slower abominations of this facility but it can take quite the hit",
 
             "that overgrown slug spits its slime over the enemy" +
-            " and than throws up his eternal organs over him wich also have an adhesive agent and as my soldiers were rendered immobile...\r\n   " +
-            "     then it came over and swallowed them whole crushing them within its body and growing even more");
+            " and than throws up his eternal organs over him wich also have an adhesive agent and as my soldiers were rendered immobile...\r\n" +
+            " then it came over and swallowed them whole crushing them within its body and growing even more");
 
         private TwistedOne _twisted = new TwistedOne("Twisted Ones"
 
-            , "A creature that vaguely resembles a duckling, yellowe feathers stained in red, twisted legs and a twisted neck... a monstosity that is cursed to look downwards.\r\n     " +
-            "     It has 2 beaks one on his face and the other on his cheek... it has a lot of needle like teeth and a long tongue with multiple tendrils on it...\r\n       " +
-            "   It has 3 legs 2 of wich a large, twisted with some of its toes broken with the bone sticking out. The other leg is underdeveloped and cannot be used."
+            , "A creature that vaguely resembles a duckling, yellowe feathers stained in red, twisted legs and a twisted neck... a monstosity that is cursed to look downwards.\r\n" +
+             "It has 2 beaks one on his face and the other on his cheek... it has a lot of needle like teeth and a long tongue with multiple tendrils on it...\r\n" +
+            "It has 3 legs 2 of wich a large, twisted with some of its toes broken with the bone sticking out. The other leg is underdeveloped and cannot be used."
             
-            , "The twisted Ones only have 2 things going for them and that's their numbers and vitality since they have high regeneration... which brings them endless agony.\r\n        " +
-            "  They only die when their undeveloped leg is pulled off of their torso, this results in their guts spilling and their lives slipping.\r\n   " +
-            "       From there on you only need to crush their skull with the exo-skeleton, we put them out of their misery but one of exo skeletons got damaged in the proccess...\r\n      " +
-            "    it would be best to get some repairs done to our weapons");
+            , " The twisted Ones only have 2 things going for them and that's their numbers and vitality since they have high regeneration... which brings them endless agony.\r\n" +
+            "They only die when their undeveloped leg is pulled off of their torso, this results in their guts spilling and their lives slipping.\r\n   " +
+            "From there on you only need to crush their skull with the exo-skeleton, we put them out of their misery but one of exo skeletons got damaged in the proccess...\r\n" +
+            "it would be best to get some repairs done to our weapons");
 
 
         public void BeginStory()
@@ -65,18 +65,18 @@ namespace TextBasedAdventureGame
 
         public void SecurityRoom1()
         {
-            Console.WriteLine("You make your way to the security but your path has been blocked, the doors closed and the walls shatterd.\r\n " +
-                "You walk around these ruins once called a corridor in order to find a path towards the security room...\r\n     " +
-                "After a long while you stumble upon a locked door near the medicalbay maybe you could find someone there with an acces key, and thus \r\n     " +
-                "you made your way towards the medicalbay...\r\n   " +
-                "  The first thing you did was ofcourse scavenge for supplies, afterall you're unarmed.\r\n     " +
-                "You take 2 medkits with you but they hold some unfamiliar medical supploes... it has to be something good afterall this place has some serious tech.\r\n    " +
-                " You sadly didn't find any keycards but decide to go onwards anyways... maybe you'll have better luck by the next desitantion.\r\n\r\n   " +
-                "  You walk through the hallways once more navigating with the map that the instructor had given you. Albeit not as functional due to the rampage \r\n" +
-                "     that went through these hallways... after a while you start hearing a voice, are you finally going insane from all the mental fatigue? Or is there actualy\r\n  " +
-                "   something there, " +
-                "The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing\r\n    " +
-                " there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?");
+            Console.WriteLine("You make your way to the security but your path has been blocked, the doors closed and the walls shatterd.\r\n" +
+                "You walk around these ruins once called a corridor in order to find a path towards the security room...\r\n" +
+                "After a long while you stumble upon a locked door near the medicalbay maybe you could find someone there with an acces key, and thus \r\n" +
+                "you made your way towards the medicalbay...\r\n" +
+                "The first thing you did was ofcourse scavenge for supplies, afterall you're unarmed.\r\n" +
+                "You take 2 medkits with you but they hold some unfamiliar medical supploes... it has to be something good afterall this place has some serious tech.\r\n" +
+                "You sadly didn't find any keycards but decide to go onwards anyways... maybe you'll have better luck by the next desitantion.\r\n\r\n   " +
+                "You walk through the hallways once more navigating with the map that the instructor had given you. Albeit not as functional due to the rampage \r\n" +
+                "that went through these hallways... after a while you start hearing a voice, are you finally going insane from all the mental fatigue? Or is there actualy\r\n"+
+                "something there, " +
+                "The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing\r\n" +
+                "there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?");
                 
                 _securityRoomSubChoise1.Decisions();
             if (_securityRoomSubChoise1.Bool1(true))
@@ -131,15 +131,15 @@ namespace TextBasedAdventureGame
                 "the other guards to appear...\r\n");
             Console.ReadLine();
             Console.WriteLine("\r\nThe beast LUNGES at you from meters far willing to make you its snack. You roll to the side and shoot the beast's neck wounding the damn thing,\r\n" +
-    "               the beast now blinded by rage just simply runs at you disregardng its defences and runs at you solely to kill.\r\n" +
-    "                You steady your breathing and take aim... you shoot the beast's left eye, the one that seemed weakest with all the scars that it had sustained.\r\n" +
-    "              This action was your saving grace as the beast fell down sliding over the broken floor hitting you against the wall. Had you been any slower\r\n" +
-    "                 you'd be decorating the place with your blood and organs. The guards sprinting towards the sounds of battle have arrived... sure took their damn time.\r\n" +
-    "          You call over to them and they help you out. You give them the stimulant to save your newfound pawn. The guards hurry over and save the guard and you?\r\n" +
-    "                 Well, you take a much deserved rest.\r\n" +
-    "   ...You slowely open your eyes as you wake up to the noise that the security guards are makking. You look around you to an unfamiliar place...\r\n" +
-    "          At this moment the person that you saved comes to thank you for what you did for him after hearing the explenation of the other guards. And another\r\n" +
-    "              person comes over... It's your roommate from the other day.\r\n");
+    "the beast now blinded by rage just simply runs at you disregardng its defences and runs at you solely to kill.\r\n" +
+    "You steady your breathing and take aim... you shoot the beast's left eye, the one that seemed weakest with all the scars that it had sustained.\r\n" +
+    "This action was your saving grace as the beast fell down sliding over the broken floor hitting you against the wall. Had you been any slower\r\n" +
+    "you'd be decorating the place with your blood and organs. The guards sprinting towards the sounds of battle have arrived... sure took their damn time.\r\n" +
+    "You call over to them and they help you out. You give them the stimulant to save your newfound pawn. The guards hurry over and save the guard and you?\r\n" +
+    "Well, you take a much deserved rest.\r\n" +
+    "...You slowely open your eyes as you wake up to the noise that the security guards are makking. You look around you to an unfamiliar place...\r\n" +
+    "At this moment the person that you saved comes to thank you for what you did for him after hearing the explenation of the other guards. And another\r\n" +
+    "person comes over... It's your roommate from the other day.\r\n");
             Console.ReadLine();
             if (_choise1.SendBool1(true))
             {
