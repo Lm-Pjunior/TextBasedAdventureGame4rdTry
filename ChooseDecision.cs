@@ -29,7 +29,7 @@ namespace TextBasedAdventureGame
 
         public bool SendBool1(bool bool1)
         {            
-            return bool1;
+            return _bool1;
         }
 
         /*

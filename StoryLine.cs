@@ -144,7 +144,7 @@ namespace TextBasedAdventureGame
             if (_choise1.SendBool1(true))
             {
                 _securityRoomSubChoice2.Decisions();
-                if (_securityRoomSubChoice2.Bool1(true))
+                if (_securityRoomSubChoice2.SendBool1(true))
                 {
                     HeroicSacrifice();
                 }
@@ -153,33 +153,35 @@ namespace TextBasedAdventureGame
                     GrandmasterOfWar();
                 }
             }
-            else
+            if (_choise1.SendBool1(false))
             {
-                Console.WriteLine("He makes his way over \"Well, guess you're still alive\" he says in an annoyed tone, you look at him and just walk away. He's of no use a liability even.\r\n" +
-                    "The atmosphere is a bit tense quite a few people seem wary of you... guess they're his friends. While others seem to be somewhat on your side \r\n" +
-                    "after seeing your achievement. It's getting late and you decide to go on guard duty togheter with the guard that you've saved before.\r\n\r\n" +
-                    "You're in front of the door once more in a tattered hallway with debry evrywhere accompanied with the thick scent of blood.\r\n" +
-                    "Nothing much is happening and you decide to talk with the guard for a while, sadly your leisure conversation got interupted and you get attacked.\r\n" +
-                    "A creature dupped The Stalker as the beast lunges toward you with its razor sharp claws you hurriedly grab you rifle,\r\n" +
-                    "only to watch it get split in two... his claws tear your flesh... but you're alive the rifle absorbed most of the momentum. You grab you pistol that\r\n" +
-                    "was conveniently in sight so you *borrowed* your old roommate's pistol. You aim the pistol... The Stalker moves around fast, luckily your pawn starts\r\n" +
-                    "distracting the creature by shooting its shoulder blades. The creature changes it's targets and turn around going for the guard you once saved.\r\n" +
-                    "you run to the the creature's right side practically hugging the broken wall and you start aiming at its wounded shoulderblade. The beast swing its tail\r\n" +
-                    "at the guard smashing him agaisnt the walls and going after you again. The creature goes after you and you plan to dodge so it'll impale its head on the\r\n" +
-                    "metal sticking out of the debri once called a wall. The beast runs towards you with devestating killing intent and you shoot at ists eyes trying to \r\n" +
-                    "blind it... however unlike your plan it decides to grab you with its tail and throw you towards the guard... your condition is... bad, your leg took\r\n" +
-                    "the brunt of the impact shattering in the process and now the beast run towards you... you grab the guard's gun, shot him in his leg\r\n" +
-                    "and threw him towards the beast... killing him.\r\n\r\n                     " +
-                    "You grab *your* rifle and start going for the eyes once more... but the beast decided to just leave with its new snack rapped with its tail... you survived\r\n" +
-                    "but at what costs? You look behind you and see your old roommate and his mates... guess that's that for your social life.\r\n\r\n" +
-                    "With heavy steps you return to the temporary base, with a heavy atmosphere those that once admired you now being the once that hate you most.\r\n" +
-                    "You serve the group no more purpose... besides one, your presence is demoralizing so you're cast away they cannot trust someone like you that regards people\r\n" +
-                    "as nothing mere pawns.\r\n" +
-                    "You're tied up and forc ed to walk on the front, going to certain death at the beast's lair... death did not come swiftly... nor was your death grand you were\r\n" +
-                    "small and ignificant those that captured you failed and fled the scene as your bones and flesh bided them time... ultimatly all you accomplished was just being the toy\r\n" +
-                    "of this sadistic beast that enjoyed your every agony... eventualy there was nothing left of you as it had stripped your skin lair after lair, \r\n" +
-                    "broken your bones and fingers... cracked your ribs and singed your flesh... your life is now nothing but pain... you were used as a pawn on the playing board you tought you controlled. \r\n" +
-                    "[Human sacrifice ending achieved]");
+                {
+                    Console.WriteLine("He makes his way over \"Well, guess you're still alive\" he says in an annoyed tone, you look at him and just walk away. He's of no use a liability even.\r\n" +
+                        "The atmosphere is a bit tense quite a few people seem wary of you... guess they're his friends. While others seem to be somewhat on your side \r\n" +
+                        "after seeing your achievement. It's getting late and you decide to go on guard duty togheter with the guard that you've saved before.\r\n\r\n" +
+                        "You're in front of the door once more in a tattered hallway with debry evrywhere accompanied with the thick scent of blood.\r\n" +
+                        "Nothing much is happening and you decide to talk with the guard for a while, sadly your leisure conversation got interupted and you get attacked.\r\n" +
+                        "A creature dupped The Stalker as the beast lunges toward you with its razor sharp claws you hurriedly grab you rifle,\r\n" +
+                        "only to watch it get split in two... his claws tear your flesh... but you're alive the rifle absorbed most of the momentum. You grab you pistol that\r\n" +
+                        "was conveniently in sight so you *borrowed* your old roommate's pistol. You aim the pistol... The Stalker moves around fast, luckily your pawn starts\r\n" +
+                        "distracting the creature by shooting its shoulder blades. The creature changes it's targets and turn around going for the guard you once saved.\r\n" +
+                        "you run to the the creature's right side practically hugging the broken wall and you start aiming at its wounded shoulderblade. The beast swing its tail\r\n" +
+                        "at the guard smashing him agaisnt the walls and going after you again. The creature goes after you and you plan to dodge so it'll impale its head on the\r\n" +
+                        "metal sticking out of the debri once called a wall. The beast runs towards you with devestating killing intent and you shoot at ists eyes trying to \r\n" +
+                        "blind it... however unlike your plan it decides to grab you with its tail and throw you towards the guard... your condition is... bad, your leg took\r\n" +
+                        "the brunt of the impact shattering in the process and now the beast run towards you... you grab the guard's gun, shot him in his leg\r\n" +
+                        "and threw him towards the beast... killing him.\r\n\r\n                     " +
+                        "You grab *your* rifle and start going for the eyes once more... but the beast decided to just leave with its new snack rapped with its tail... you survived\r\n" +
+                        "but at what costs? You look behind you and see your old roommate and his mates... guess that's that for your social life.\r\n\r\n" +
+                        "With heavy steps you return to the temporary base, with a heavy atmosphere those that once admired you now being the once that hate you most.\r\n" +
+                        "You serve the group no more purpose... besides one, your presence is demoralizing so you're cast away they cannot trust someone like you that regards people\r\n" +
+                        "as nothing mere pawns.\r\n" +
+                        "You're tied up and forc ed to walk on the front, going to certain death at the beast's lair... death did not come swiftly... nor was your death grand you were\r\n" +
+                        "small and ignificant those that captured you failed and fled the scene as your bones and flesh bided them time... ultimatly all you accomplished was just being the toy\r\n" +
+                        "of this sadistic beast that enjoyed your every agony... eventualy there was nothing left of you as it had stripped your skin lair after lair, \r\n" +
+                        "broken your bones and fingers... cracked your ribs and singed your flesh... your life is now nothing but pain... you were used as a pawn on the playing board you tought you controlled. \r\n" +
+                        "[Human sacrifice ending achieved]");
+                }
             }
         }
 
