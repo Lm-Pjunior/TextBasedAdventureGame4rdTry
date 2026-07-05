@@ -8,6 +8,9 @@ namespace TextBasedAdventureGame
 {
     public class SecurityRoomSubChoise1 : ChooseDecision
     {
+        private string _decision;
+        private bool _bool1 = false;
+
         private bool _looping = true;
         public override void Decisions()
         {
@@ -18,10 +21,10 @@ namespace TextBasedAdventureGame
                     Console.WriteLine(" there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?\r\n" +
                         "A. Fuck this shit I'm out!\r\n" +
                         "B. Observe and wait for an oppertunnity?\r\n\r\n");
-                    decision = Console.ReadLine();
+                    _decision = Console.ReadLine();
 
                 }
-                if (decision == "a" || decision == "A")
+                if (_decision == "a" || _decision == "A")
                 {
                     _looping = false;
 
@@ -30,7 +33,7 @@ namespace TextBasedAdventureGame
                     Console.ReadLine();
                     //_storyLine.SecurityRoomCoward();
                 }
-                if (decision == "b" || decision == "B")
+                if (_decision == "b" || _decision == "B")
                 {
                     _looping = false;
 
@@ -42,11 +45,11 @@ namespace TextBasedAdventureGame
                 }
 
 
-                if (decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")
+                if (_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")
                 {
                     ShowPaths();
                 }
-                if (decision == "clear" || decision == "Clear")
+                if (_decision == "clear" || _decision == "Clear")
                 {
                     ClearText();
                 }
@@ -56,6 +59,7 @@ namespace TextBasedAdventureGame
 
         public bool Bool1(bool bool1)
         {
+            _bool1 = bool1;
             return _bool1;
         }
         

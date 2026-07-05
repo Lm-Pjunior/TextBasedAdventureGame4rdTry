@@ -9,8 +9,8 @@ using System.Xml.Linq;
 
 namespace TextBasedAdventureGame
 {
-    
-    
+
+    //basicly removestoryline and add a bit of storyline fuction to each choose decision or a branch like system and use System.Environment.Exit(0); to end the game
     public class StoryLine
     {
         //it needs bool functions for the storyline.
@@ -50,7 +50,11 @@ namespace TextBasedAdventureGame
                "But be sure not to go to the shooting range as it's dangerous currently...");
 
             _choise1.Decisions();
-            _choise2.Decisions();
+            if (_choise1.Quitting(_choise1.Quit))
+            {
+                _choise2.Decisions();
+            }
+            
             if(_choise2.Bool1(true))
             {
                 GeneratorRoom();
@@ -111,6 +115,7 @@ namespace TextBasedAdventureGame
                 "A creature known as The Stalker that does not tire and does not need to eat has been with you, toying with you and your tired soul.\r\n" +
                 "It had noticed your heavy footsteps near its lair... you shouldn't have ran... you should've stayed and saved the man... but alas, you didn't and now... you die\r\n" +
                 "because of it. [Death is a mercy ending achieved]");
+            System.Environment.Exit(0);
         }
 
         public void SecurityRoomPawnMaster()
@@ -141,7 +146,7 @@ namespace TextBasedAdventureGame
     "At this moment the person that you saved comes to thank you for what you did for him after hearing the explenation of the other guards. And another\r\n" +
     "person comes over... It's your roommate from the other day.\r\n");
             Console.ReadLine();
-            if (_choise1.SendBool1(true))
+            if (_choise1.SendBool1B(true))
             {
                 _securityRoomSubChoice2.Decisions();
                 if (_securityRoomSubChoice2.SendBool1(true))
@@ -181,6 +186,7 @@ namespace TextBasedAdventureGame
                         "of this sadistic beast that enjoyed your every agony... eventualy there was nothing left of you as it had stripped your skin lair after lair, \r\n" +
                         "broken your bones and fingers... cracked your ribs and singed your flesh... your life is now nothing but pain... you were used as a pawn on the playing board you tought you controlled. \r\n" +
                         "[Human sacrifice ending achieved]");
+                    System.Environment.Exit(0);
                 }
             }
         }
@@ -204,6 +210,7 @@ namespace TextBasedAdventureGame
                 "your wrath... You did it you avenged your brothers that had fallen and fought so the others could live one day longer... and maybe just maybe they can make it out\r\n" +
                 "of this wretched hell...\r\n" +
                 "[For those that will live and for those that have fallen ending ahcieved]");
+            System.Environment.Exit(0);
         }
             
         public void GrandmasterOfWar()
@@ -238,6 +245,7 @@ namespace TextBasedAdventureGame
                 "goign through battles with your men aswell as having the old researchers help you find newer knowledge, you are however on the run for those that had caused this.\r\n" +
                 "But those fools have little going for them as you and your men easily deal with the enemy...\r\n" +
                 "[Grandmaster Of War ending achieved]");
+            System.Environment.Exit(0);
 
 
         }
@@ -265,12 +273,7 @@ namespace TextBasedAdventureGame
 
             Console.ReadLine();
 
-            GeneratorRoomSplit();
-        }
-
-        public void GeneratorRoomSplit() //not done yet have to make a bool function implement it by the if as condition and than remove the comment bits
-        {
-            if (_choise1.SendBool2(true))
+            if (_choise1.SendBool2B(true))
             {
                 Console.WriteLine(" You grab your batton and swing before you even lay eyes upon your newfound foe... \r\n" +
                     "you miss as your dumbass didn't look at how big the thing is that attacked you.\r\n" +
@@ -310,7 +313,10 @@ namespace TextBasedAdventureGame
                     "hands. this is the end of your story, food for a beast if only you had found the ammo for the rifle or had a weapon to hold it off...\r\n" +
                     "[Dogfood ending achieved]");
             }
+            System.Environment.Exit(0);
         }
+
+        
 
 
 /*

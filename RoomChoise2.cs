@@ -9,9 +9,16 @@ namespace TextBasedAdventureGame
     public class RoomChoise2 : ChooseDecision
     {
         private bool _looping = true;
+
+
+
+        private string _decision;
+        private bool _bool1 = false;
         //A is about the security room witht he friendship thing going on
         public override void Decisions()
         {
+            
+
             while (_looping)
             {
                 _bool1 = false;
@@ -22,8 +29,8 @@ namespace TextBasedAdventureGame
                     "Type down you choice... 'A' or 'B'\r\n" +
                     "You can also type down clear to 'clear' the texts or 'paths' to show possible endings within the choices\r\n");
 
-                decision = Console.ReadLine();
-                if (decision == "a" || decision == "A")
+                _decision = Console.ReadLine();
+                if (_decision == "a" || _decision == "A")
                 {
 
                     _bool1 = true;
@@ -31,16 +38,16 @@ namespace TextBasedAdventureGame
                     _looping = false;
                 }
 
-                if (decision == "b" || decision == "B")
+                if (_decision == "b" || _decision == "B")
                 {
 
                     _looping = false;
                 }
-                if(decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")
+                if(_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")
                 {
                     ShowPaths();
                 }
-                if (decision == "clear" || decision == "Clear")
+                if (_decision == "clear" || _decision == "Clear")
                 {
                     ClearText();
                 }
@@ -51,6 +58,7 @@ namespace TextBasedAdventureGame
 
         public bool Bool1(bool bool1)
         {
+            _bool1 = bool1;
             return _bool1;
         }
 

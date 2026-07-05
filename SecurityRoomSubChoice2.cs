@@ -6,19 +6,23 @@ using System.Threading.Tasks;
 
 namespace TextBasedAdventureGame
 {
+    
     public class SecurityRoomSubChoice2 : ChooseDecision
     {
         private bool _looping = true;
+
+        private string _decision;
+        private bool _bool1 = false;
         public override void Decisions()
         {
             while (_looping)
             {
                 {
                     _bool1 = false;
-                    decision = Console.ReadLine();
+                    _decision = Console.ReadLine();
 
                 }
-                if (decision == "a" || decision == "A")
+                if (_decision == "a" || _decision == "A")
                 {
                     _looping = false;
 
@@ -28,7 +32,7 @@ namespace TextBasedAdventureGame
                     Console.ReadLine();
                     
                 }
-                if (decision == "b" || decision == "B")
+                if (_decision == "b" || _decision == "B")
                 {
                     _looping = false;
 
@@ -37,11 +41,11 @@ namespace TextBasedAdventureGame
                 }
 
 
-                if (decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")
+                if (_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")
                 {
                     ShowPaths();
                 }
-                if (decision == "clear" || decision == "Clear")
+                if (_decision == "clear" || _decision == "Clear")
                 {
                     ClearText();
                 }
@@ -50,6 +54,7 @@ namespace TextBasedAdventureGame
 
         public bool Bool1(bool bool1)
         {
+            _bool1 = bool1;
             return _bool1;
         }
         

@@ -10,12 +10,16 @@ namespace TextBasedAdventureGame
     {
         // friend = false; // choise B
         // baton = false; //choise D
+        private string _decision;
+        private bool _quit = false;
 
         private bool _looping = true;
         private bool _looping2 = true;
         private bool _friend = false;
         private bool _zappingStick = false;
-        //decision A results in a bullet through the head
+
+        public bool Quit => _quit;
+        //_decision A results in a bullet through the head
         //choise C in getting fired
         public override void Decisions()
         {
@@ -30,10 +34,10 @@ namespace TextBasedAdventureGame
                         "D. The armory\r\n\r\n" +
                         "Type down you choice... 'A', 'B', 'C' or 'D'\r\n" +
                         "You can also type down clear to 'clear' the texts or 'paths' to show possible endings within the choices\r\n");
-                    decision = Console.ReadLine();
+                    _decision = Console.ReadLine();
 
                 }
-                if (decision == "a" || decision == "A")
+                if (_decision == "a" || _decision == "A")
                 {
                     Console.WriteLine("You're bored and decide to check out the shooting range, ignoring the warning the instructor gave you. Wow... you died");
                     Console.WriteLine("but hey this propably was natural selection as you couldn't followe such BASIC commands.");
@@ -42,11 +46,12 @@ namespace TextBasedAdventureGame
                     Console.WriteLine("[Mercy kill ending achieved]\r\n");
                     Console.WriteLine("Press 'enter' to continue.");
                     Console.ReadLine();
-
+                    _quit = true;
                     _looping = false;
+                    System.Environment.Exit(0);
 
                 }
-                if (decision == "b" || decision == "B")
+                if (_decision == "b" || _decision == "B")
                 {
                     while (_looping2)
                     {
@@ -58,93 +63,92 @@ namespace TextBasedAdventureGame
                             "Type down you choice... 'A', 'B', 'C' or 'D'\r\n" +
                             "You can also type down clear to 'clear' the texts or 'paths' to show possible endings within the choices\r\n");
 
-                        decision = Console.ReadLine();
+                        _decision = Console.ReadLine();
 
-                        if (decision == "a" || decision == "A")
+                        if (_decision == "a" || _decision == "A")
                         {
+                            
                             Console.WriteLine("You uppercut him hard enough to shatter a bit of his teeth... his dentist won't be happy and nor will he...\r\n" +
                                "You have made your first enemy within this facility... happy now?");
 
-                            _looping2 = false;
-                            _looping = false;
+                            break;
+                            
+
                         }
 
-                        if (decision == "b" || decision == "B")
+                        if (_decision == "b" || _decision == "B")
                         {
                             Console.WriteLine("You expected a fight to the death but he was supprisingly glad... and he explains how the lower bunk is supperious\r\n" +
                                 "and thus begins the fight you were expecting... it was a truly stoic fight... of words, it was an argument... again.\r\n" +
                                 "But at the end of the day you gained a friend... your first friend within this facility... and maybe your last ofcourse this is something only we know.");
 
                             _friend = true;
-                            _looping2 = false;
-                            _looping = false;
+                            break;
                             //_storyLine.AlarmBit();
                         }
-                        if (decision == "paths" || decision == "Paths")
+
+                        break;
+
+                    }
+                }
+                        if (_decision == "c" || _decision == "C")
+                        {
+                            Console.WriteLine("You decided that working for a staggering 296 seconds was more than plenty... so you decide to go home");
+                            Console.WriteLine("this ofcourse gets you fired so hard you'll be flipping burgers for the rest of your life, but hey...");
+                            Console.WriteLine(" atleast YOU'RE alive...");
+                            Console.WriteLine("[Fired ending achieved]");
+                            Console.WriteLine("");
+                            Console.WriteLine("Press 'enter' to continue.");
+                            Console.ReadLine();
+
+                            System.Environment.Exit(0);
+                }
+
+                        if (_decision == "d" || _decision == "D")
+                        {
+                           
+                            Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
+                            _zappingStick = true;
+
+                            //_storyLine.AlarmBit();
+
+                            break;
+                        }
+                        if (_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")
                         {
                             ShowPaths();
                         }
-                        if (decision == "clear" || decision == "Clear")
+                        if (_decision == "clear" || _decision == "Clear")
                         {
                             ClearText();
                         }
 
-                        _friend = true;
-                        _looping2 = false;
-                        _looping = false;
                     }
 
-                }
-            }
-
-
-            if (decision == "c" || decision == "C")
-            {
-                Console.WriteLine("You decided that working for a staggering 296 seconds was more than plenty... so you decide to go home");
-                Console.WriteLine("this ofcourse gets you fired so hard you'll be flipping burgers for the rest of your life, but hey...");
-                Console.WriteLine(" atleast YOU'RE alive...");
-                Console.WriteLine("[Fired ending achieved]");
-                Console.WriteLine("");
-                Console.WriteLine("Press 'enter' to continue.");
-                Console.ReadLine();
-
-                _looping = false;
-
-            }
-            if (decision == "d" || decision == "D")
-            {
-
-                Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
-                _zappingStick = true;
-                _looping = false;
-                //_storyLine.AlarmBit();
-
-
-            }
-            if (decision == "paths" || decision == "Paths" || decision == "route" || decision == "Route")
-            {
-                ShowPaths();
-            }
-            if (decision == "clear" || decision == "Clear")
-            {
-                ClearText();
-            }
+            RoomChoise1 roomChoise1 = new RoomChoise1();
+            roomChoise1.Decisions();
         }
     
       
         
 
-        public  bool SendBool1(bool friend)
+        public  bool SendBool1B(bool friend)
 
         {
-
+            _friend = friend;
             return _friend;
         }
 
-        public  bool SendBool2(bool weapon)
+        public  bool SendBool2B(bool weapon)
 
         {
+            _zappingStick = weapon;
             return _zappingStick;
+        }
+
+        public bool Quitting(bool value)
+        {
+            return _quit;
         }
 
         

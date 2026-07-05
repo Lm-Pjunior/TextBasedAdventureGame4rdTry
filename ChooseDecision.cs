@@ -8,8 +8,8 @@ namespace TextBasedAdventureGame
 {
     public abstract class ChooseDecision
     {
-        protected string decision;
-        protected bool _bool1;
+        private string _decision;
+        private bool _bool1 = false;
 
         
         public abstract void Decisions();
@@ -18,7 +18,7 @@ namespace TextBasedAdventureGame
        
         protected void ClearFunction()
         {
-            if (decision == "clear" || decision == "Clear" || decision == "CLEAR")
+            if (_decision == "clear" || _decision == "Clear" || _decision == "CLEAR")
             {
                 Console.Clear();
             }
