@@ -13,6 +13,7 @@ namespace TextBasedAdventureGame
     //basicly removestoryline and add a bit of storyline fuction to each choose decision or a branch like system and use System.Environment.Exit(0); to end the game
     public class StoryLine
     {
+        /*
         //it needs bool functions for the storyline.
         private RoomChoise1 _choise1 = new RoomChoise1();
         private RoomChoise2 _choise2 = new RoomChoise2();
@@ -49,20 +50,9 @@ namespace TextBasedAdventureGame
                "The instructor gives you your ID and tells you go by the armory at some point in roder to get your gear.\r\n" +
                "But be sure not to go to the shooting range as it's dangerous currently...");
 
-            _choise1.Decisions();
-            if (_choise1.Quitting(_choise1.Quit))
-            {
-                _choise2.Decisions();
-            }
             
-            if(_choise2.Bool1(true))
-            {
-                GeneratorRoom();
-            }
-            else
-            {
-                SecurityRoom1();
-            }
+            
+            
         }
 
         
@@ -82,15 +72,7 @@ namespace TextBasedAdventureGame
                 "The voice starts calling for help you also hear him grunt and you wonder if you should help but the screams for help weren't the only thing\r\n" +
                 "there. One of those THINGS that wrecked the walls, its deafening wails echo through the hallway... you can't help but shivver what do you do...?");
                 
-                _securityRoomSubChoise1.Decisions();
-            if (_securityRoomSubChoise1.Bool1(true))
-            {
-                SecurityRoomCoward();
-            }
-            else
-            {
-                SecurityRoomPawnMaster();
-            }
+           
 
             }
 
@@ -136,15 +118,15 @@ namespace TextBasedAdventureGame
                 "the other guards to appear...\r\n");
             Console.ReadLine();
             Console.WriteLine("\r\nThe beast LUNGES at you from meters far willing to make you its snack. You roll to the side and shoot the beast's neck wounding the damn thing,\r\n" +
-    "the beast now blinded by rage just simply runs at you disregardng its defences and runs at you solely to kill.\r\n" +
-    "You steady your breathing and take aim... you shoot the beast's left eye, the one that seemed weakest with all the scars that it had sustained.\r\n" +
-    "This action was your saving grace as the beast fell down sliding over the broken floor hitting you against the wall. Had you been any slower\r\n" +
-    "you'd be decorating the place with your blood and organs. The guards sprinting towards the sounds of battle have arrived... sure took their damn time.\r\n" +
-    "You call over to them and they help you out. You give them the stimulant to save your newfound pawn. The guards hurry over and save the guard and you?\r\n" +
-    "Well, you take a much deserved rest.\r\n" +
-    "...You slowely open your eyes as you wake up to the noise that the security guards are makking. You look around you to an unfamiliar place...\r\n" +
-    "At this moment the person that you saved comes to thank you for what you did for him after hearing the explenation of the other guards. And another\r\n" +
-    "person comes over... It's your roommate from the other day.\r\n");
+            "the beast now blinded by rage just simply runs at you disregardng its defences and runs at you solely to kill.\r\n" +
+            "You steady your breathing and take aim... you shoot the beast's left eye, the one that seemed weakest with all the scars that it had sustained.\r\n" +
+            "This action was your saving grace as the beast fell down sliding over the broken floor hitting you against the wall. Had you been any slower\r\n" +
+            "you'd be decorating the place with your blood and organs. The guards sprinting towards the sounds of battle have arrived... sure took their damn time.\r\n" +
+            "You call over to them and they help you out. You give them the stimulant to save your newfound pawn. The guards hurry over and save the guard and you?\r\n" +
+            "Well, you take a much deserved rest.\r\n" +
+            "...You slowely open your eyes as you wake up to the noise that the security guards are makking. You look around you to an unfamiliar place...\r\n" +
+            "At this moment the person that you saved comes to thank you for what you did for him after hearing the explenation of the other guards. And another\r\n" +
+            "person comes over... It's your roommate from the other day.\r\n");
             Console.ReadLine();
             if (_choise1.SendBool1B(true))
             {
@@ -304,6 +286,7 @@ namespace TextBasedAdventureGame
                     "blocking it with the shield, and using the baton to electrocute it whenever whilst that slow ass slug came on over... slowely but surely.\r\n" +
                     "You shoot at it with all you have whislt defending against the wolf that is now starting to stand up. Sadly... this is your end but hey,\r\n" +
                     "you activated the generator. [Suicidal mission ending achieved]");
+                System.Environment.Exit(0);
             }
             else
             {
@@ -320,9 +303,31 @@ namespace TextBasedAdventureGame
 
 
 /*
-     C. OutsideFacility:
-     You decide you've worked enough and make a run for it... you do know you won't get paid for showing up right?
-     [Fired ending achieved]
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         /*
@@ -343,6 +348,10 @@ namespace TextBasedAdventureGame
      You meet a fella that you can befriend... or get punched by 
        A. The top bunk shall be MINE
        B. This place reeks [dialogue 'cutscene' bool friend = true]
+
+     C. OutsideFacility:
+     You decide you've worked enough and make a run for it... you do know you won't get paid for showing up right?
+     [Fired ending achieved]
 
      D. Armory:
      You go to the armory to collect your equipment... a slick suit and a zapping stick.

@@ -10,22 +10,22 @@ namespace TextBasedAdventureGame
     {
         // friend = false; // choise B
         // baton = false; //choise D
-        private string _decision;
         private bool _quit = false;
 
         private bool _looping = true;
         private bool _looping2 = true;
         private bool _friend = false;
         private bool _zappingStick = false;
+        //public RoomChoise1 Choise1bool = new RoomChoise1();
 
-        public bool Quit => _quit;
+        public bool Friend => _friend;
         //_decision A results in a bullet through the head
         //choise C in getting fired
         public override void Decisions()
         {
             while (_looping) {
                 {
-
+                    StoryLine();
                     Console.WriteLine("The instructor hands you a map so you can find your way around the facility evrything is marked but you don't have acces to basicly anything.\r\n" +
                         "Where will you go?\r\n" +
                         "A. The shooting range\r\n" +
@@ -46,8 +46,7 @@ namespace TextBasedAdventureGame
                     Console.WriteLine("[Mercy kill ending achieved]\r\n");
                     Console.WriteLine("Press 'enter' to continue.");
                     Console.ReadLine();
-                    _quit = true;
-                    _looping = false;
+                    
                     System.Environment.Exit(0);
 
                 }
@@ -86,10 +85,10 @@ namespace TextBasedAdventureGame
                             break;
                             //_storyLine.AlarmBit();
                         }
-
-                        break;
-
                     }
+                    RoomChoise2 roomChoise2 = new RoomChoise2();
+                    roomChoise2.Decisions();
+                    break;
                 }
                         if (_decision == "c" || _decision == "C")
                         {
@@ -102,7 +101,7 @@ namespace TextBasedAdventureGame
                             Console.ReadLine();
 
                             System.Environment.Exit(0);
-                }
+                        }
 
                         if (_decision == "d" || _decision == "D")
                         {
@@ -110,8 +109,8 @@ namespace TextBasedAdventureGame
                             Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
                             _zappingStick = true;
 
-                            //_storyLine.AlarmBit();
-
+                            RoomChoise2 roomChoise2 = new RoomChoise2();
+                            roomChoise2.Decisions();
                             break;
                         }
                         if (_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")
@@ -135,7 +134,6 @@ namespace TextBasedAdventureGame
         public  bool SendBool1B(bool friend)
 
         {
-            _friend = friend;
             return _friend;
         }
 
@@ -145,12 +143,6 @@ namespace TextBasedAdventureGame
             _zappingStick = weapon;
             return _zappingStick;
         }
-
-        public bool Quitting(bool value)
-        {
-            return _quit;
-        }
-
         
         public void ClearText()
         {
@@ -162,8 +154,21 @@ namespace TextBasedAdventureGame
             Console.WriteLine("The 2 choices [Mercy kill] and [Fired] and the other 2 might save ones life... depending on what you do ofcourse\r\n");
         }
 
+        public override void StoryLine()
+        {
+            //begin story
+            Console.WriteLine("You're here for an intake to this secretive facility...\r\n" +
+               " all you know is that it has brought great contribution to both medical and technical discoveries...\r\n" +
+               "The instructor greets you outside... if you succeed they'll bring you to the facility... you're here for\r\n" +
+               "Luckily for you, you passed so you can FINNALY buy a gaming set which you couldn't afford before... you never had anything besides your body and wits...\r\n" +
+               "The instructor gives you your ID and tells you go by the armory at some point in roder to get your gear.\r\n" +
+               "But be sure not to go to the shooting range as it's dangerous currently...");
+        }
 
-        
+        public override void StoryLineSec()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 

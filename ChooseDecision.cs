@@ -8,13 +8,13 @@ namespace TextBasedAdventureGame
 {
     public abstract class ChooseDecision
     {
-        private string _decision;
-        private bool _bool1 = false;
+        protected string _decision;
 
         
         public abstract void Decisions();
-       
 
+        public abstract void StoryLine();
+        public abstract void StoryLineSec();
        
         protected void ClearFunction()
         {
@@ -27,10 +27,7 @@ namespace TextBasedAdventureGame
         public abstract void ShowPaths();
         
 
-        public bool SendBool1(bool bool1)
-        {            
-            return _bool1;
-        }
+        
 
         /*
   Rooms
