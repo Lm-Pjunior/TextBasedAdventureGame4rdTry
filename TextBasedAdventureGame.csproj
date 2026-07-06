@@ -46,6 +46,7 @@
     <Compile Include="ChooseDecision.cs" />
     <Compile Include="FaceSlug.cs" />
     <Compile Include="Monster.cs" />
+    <Compile Include="PlayerStatus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="RoomChoise1.cs" />
     <Compile Include="RoomChoise2.cs" />

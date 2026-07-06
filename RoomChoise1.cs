@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 namespace TextBasedAdventureGame
 {
     public class RoomChoise1 : ChooseDecision
+
+
+
     {
         // friend = false; // choise B
         // baton = false; //choise D
