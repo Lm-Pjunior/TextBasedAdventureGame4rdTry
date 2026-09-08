@@ -34,7 +34,7 @@ namespace TextBasedAdventureGame
         public override void Decisions()
         {
             RoomChoise1 choise1 = new RoomChoise1();
-            if (choise1.Friend)
+            if (PlayerStatus.Friend)
             {
                 while (true)
                 {

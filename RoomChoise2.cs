@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -85,8 +86,8 @@ namespace TextBasedAdventureGame
                "As you put your hand in the pocket you get attacked, in a hurry you turn around.");
 
             Console.ReadLine();
-            RoomChoise1 _choise1 = new RoomChoise1();
-            if (_choise1.SendBool2B(true))
+            if (PlayerStatus.Armed) 
+                //Unlike NORMALLY static is the special kid of the bunch... sso instead of makking your usual instatiation you have to actualy put the class name infront of it.
             {
                 Console.WriteLine(" You grab your batton and swing before you even lay eyes upon your newfound foe... \r\n" +
                     "you miss as your dumbass didn't look at how big the thing is that attacked you.\r\n" +

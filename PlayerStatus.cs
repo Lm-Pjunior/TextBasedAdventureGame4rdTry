@@ -15,7 +15,7 @@ namespace TextBasedAdventureGame
 
         public static bool Armed = false;
         public static bool Friend = false;
-        private static int _hp = 100;
+        public static int Hp = 100;
 
 
 
@@ -28,14 +28,16 @@ namespace TextBasedAdventureGame
         public static void SendBool1B()
 
         {
-            //friend
             RoomChoise1 boolReturned = new RoomChoise1();
+
+            //friend hidden end
+
             if (boolReturned.Decision == "B" || boolReturned.Decision == "b")
             {
                 Friend = true;
             }
         
-            //weapon
+            //weapon hidden end
 
             if (boolReturned.Decision == "D" || boolReturned.Decision == "d")
             {
