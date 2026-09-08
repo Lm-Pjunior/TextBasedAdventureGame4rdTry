@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ChooseDecision.cs" />
     <Compile Include="FaceSlug.cs" />
+    <Compile Include="HordeMonster.cs" />
     <Compile Include="HordeRoute.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="PlayerStatus.cs" />
