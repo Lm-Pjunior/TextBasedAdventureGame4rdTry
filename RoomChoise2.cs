@@ -45,8 +45,10 @@ namespace TextBasedAdventureGame
 
                 if (_decision == "c" || _decision == "C")
                 {
-                    StoryLineSec();
+                    HordeRoute painPath = new HordeRoute();
+                    painPath.Decisions();
                     //instantiate the path to to monster horde here
+
                     break;
                 }
                 if (_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")

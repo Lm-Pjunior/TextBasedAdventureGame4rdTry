@@ -17,7 +17,8 @@ namespace TextBasedAdventureGame
         public static bool Friend = false;
         public static int Hp = 100;
 
-
+        public static bool Humbled = false;
+        //if you showed mercy to a monster you get a devastating gut punch that basicly forces you into a bad ending
 
         //Add 2 new bool type functions to easen my own stress
 
