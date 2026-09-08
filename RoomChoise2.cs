@@ -23,8 +23,9 @@ namespace TextBasedAdventureGame
                 Console.WriteLine("After you make your back to the instructor you suddenly hear the alarms go off and the lights go out... the generator has been destroyed. The instructor organises the cadets and tells you\r\n" +
                     "to take some supplies and assist the guards... where will you go?\r\n\r\n" +
                     "A. Generator.\r\n" +
-                    "B. Security room\r\n\r\n" +
-                    "Type down you choice... 'A' or 'B'\r\n" +
+                    "B. Security room\r\n" +
+                    "C. Into the horde\r\n\r\n" +
+                    "Type down you choice... 'A', 'B' or 'C'\r\n" +
                     "You can also type down clear to 'clear' the texts or 'paths' to show possible endings within the choices\r\n");
 
                 _decision = Console.ReadLine();
@@ -41,7 +42,14 @@ namespace TextBasedAdventureGame
                     securityRoomSubChoise1.Decisions();
                     break;
                 }
-                if(_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")
+
+                if (_decision == "c" || _decision == "C")
+                {
+                    StoryLineSec();
+                    //instantiate the path to to monster horde here
+                    break;
+                }
+                if (_decision == "paths" || _decision == "Paths" || _decision == "route" || _decision == "Route")
                 {
                     ShowPaths();
                 }
@@ -120,13 +128,14 @@ namespace TextBasedAdventureGame
                     "you activated the generator. [Suicidal mission ending achieved]");
                 System.Environment.Exit(0);
             }
-            else
-            {
-                Console.WriteLine("The centipe like beast bites into your ankle crushing bone and tearing flesh, you quikly turn around and use the broken shield that is mounted to\r\n" +
-                    "your arm, all you can do is delay the beast... you cry for help but no avail. Your shield can't hld out for long under the beast's attacks and is\r\n" +
-                    "starting to crack, the beast takking the oppertunity bites a chunk out of the shield and throws you to the ground. pinning you down with a hundred\r\n" +
-                    "hands. this is the end of your story, food for a beast if only you had found the ammo for the rifle or had a weapon to hold it off...\r\n" +
-                    "[Dogfood ending achieved]");
+            if (PlayerStatus.Armed == false) {
+                {
+                    Console.WriteLine("The centipe like beast bites into your ankle crushing bone and tearing flesh, you quikly turn around and use the broken shield that is mounted to\r\n" +
+                        "your arm, all you can do is delay the beast... you cry for help but no avail. Your shield can't hld out for long under the beast's attacks and is\r\n" +
+                        "starting to crack, the beast takking the oppertunity bites a chunk out of the shield and throws you to the ground. pinning you down with a hundred\r\n" +
+                        "hands. this is the end of your story, food for a beast if only you had found the ammo for the rifle or had a weapon to hold it off...\r\n" +
+                        "[Dogfood ending achieved]");
+                }
             }
             System.Environment.Exit(0);
         }

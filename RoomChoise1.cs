@@ -13,7 +13,6 @@ namespace TextBasedAdventureGame
     {
         // friend = false; // choise B
         // baton = false; //choise D
-        private bool _quit = false;
 
         private bool _looping = true;
         private bool _looping2 = true;
@@ -81,7 +80,7 @@ namespace TextBasedAdventureGame
                             Console.WriteLine("You expected a fight to the death but he was supprisingly glad... and he explains how the lower bunk is supperious\r\n" +
                                 "and thus begins the fight you were expecting... it was a truly stoic fight... of words, it was an argument... again.\r\n" +
                                 "But at the end of the day you gained a friend... your first friend within this facility... and maybe your last ofcourse this is something only we know.");
-
+                            PlayerStatus.Friend = true;
                             break;
                             //_storyLine.AlarmBit();
                         }
@@ -108,6 +107,7 @@ namespace TextBasedAdventureGame
                            
                             Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
                             
+                            PlayerStatus.Armed = true;
                             RoomChoise2 roomChoise2 = new RoomChoise2();
                             roomChoise2.Decisions();
                             break;

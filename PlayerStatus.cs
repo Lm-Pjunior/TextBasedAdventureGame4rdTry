@@ -32,17 +32,8 @@ namespace TextBasedAdventureGame
 
             //friend hidden end
 
-            if (boolReturned.Decision == "B" || boolReturned.Decision == "b")
-            {
-                Friend = true;
-            }
-        
-            //weapon hidden end
-
-            if (boolReturned.Decision == "D" || boolReturned.Decision == "d")
-            {
-                Armed = true;
-            }
+           
+              
             
         }
 
