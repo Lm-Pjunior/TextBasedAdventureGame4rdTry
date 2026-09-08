@@ -9,7 +9,13 @@ namespace TextBasedAdventureGame
     public abstract class ChooseDecision
     {
         protected string _decision;
-
+        public string Decision 
+        {  
+            get 
+            {
+                return _decision; 
+            } 
+        }
         
         public abstract void Decisions();
 

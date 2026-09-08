@@ -17,11 +17,9 @@ namespace TextBasedAdventureGame
 
         private bool _looping = true;
         private bool _looping2 = true;
-        private bool _friend = false;
-        private bool _zappingStick = false;
+        
         //public RoomChoise1 Choise1bool = new RoomChoise1();
 
-        public bool Friend => _friend;
         //_decision A results in a bullet through the head
         //choise C in getting fired
         public override void Decisions()
@@ -84,7 +82,6 @@ namespace TextBasedAdventureGame
                                 "and thus begins the fight you were expecting... it was a truly stoic fight... of words, it was an argument... again.\r\n" +
                                 "But at the end of the day you gained a friend... your first friend within this facility... and maybe your last ofcourse this is something only we know.");
 
-                            _friend = true;
                             break;
                             //_storyLine.AlarmBit();
                         }
@@ -110,8 +107,7 @@ namespace TextBasedAdventureGame
                         {
                            
                             Console.WriteLine("You went to the armory and got handed... a baton... you expected more to say the least...");
-                            _zappingStick = true;
-
+                            
                             RoomChoise2 roomChoise2 = new RoomChoise2();
                             roomChoise2.Decisions();
                             break;
@@ -134,18 +130,7 @@ namespace TextBasedAdventureGame
       
         
 
-        public  bool SendBool1B(bool friend)
-
-        {
-            return _friend;
-        }
-
-        public  bool SendBool2B(bool weapon)
-
-        {
-            _zappingStick = weapon;
-            return _zappingStick;
-        }
+        
         
         public void ClearText()
         {
