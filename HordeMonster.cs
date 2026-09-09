@@ -20,27 +20,56 @@ namespace TextBasedAdventureGame
             _hp = hp;
             _dmg = dmg;
         }
-        public void Attack()
+        public virtual void Attack()
         {
-            PlayerStatus.Hp -= _dmg * _ammount;
+            //the groupAttack is a local variable
+            int groupAttack = _dmg * _ammount;
+            PlayerStatus.Hp -= groupAttack;
+            Console.WriteLine($"The enemy horde attacked you and dealt {_dmg} damage each, you only got {PlayerStatus.Hp} hp left! \r\n\r\n");
         }
-        public void MonstersFelled()
+        public void MonstersDmgTaken()
         {
+            AttackMenu fight = new AttackMenu();
             int hordeHp = _hp * _ammount;
-            if (hordeHp <= 0)
+
+            while (true)
             {
+                if (PlayerStatus.Hp <= 0)
+                {
+                    Console.WriteLine("\r\n Oh boy seems you died... \r\n\r\n [Short lived ending achieved] \r\n\r\n");
+                    System.Environment.Exit(0);
+
+                }
+                fight.Attack();
+                if (PlayerStatus.Attacking)
+                {
+                    hordeHp -= PlayerStatus.Dmg;
+                    Console.WriteLine($"\r\n You swing your arm around like a tothler would, smacking the enemy with whatever you wanna call your weapon. \r\n" +
+                    $"You dealth {PlayerStatus.Dmg} damage to your apponenents leaving them with {hordeHp} hp. \r\n\r\n");
+                }
+                PlayerStatus.Attacking = false;
+
+                if (hordeHp <= 0)
+                {
+                    Console.Clear();
+                    break;
+                }
+                Attack();
+            }
+            
+            
                 Console.WriteLine("\r\n Hmmmm they seem dead should anywho I take this as a weapon? \r\n Type yes or no");
                 _answer = Console.ReadLine();
                 if (_answer == "yes" || _answer == "Yes")
                 {
-                    Console.WriteLine("You pick up a monster carcase and proceed through! \r\n");
-                    PlayerStatus.Dmg += _hp / 50;
+                    Console.WriteLine("You pick up a carcase and proceed through. \r\n");
+                    PlayerStatus.Dmg += _hp / 2;
                 }
                 else
                 {
                     Console.WriteLine("Sad... I'll go now though.");
                 }
-            }
+            
         }
     }
 }

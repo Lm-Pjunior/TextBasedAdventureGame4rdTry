@@ -15,9 +15,10 @@ namespace TextBasedAdventureGame
 
         public static bool Armed = false;
         public static bool Friend = false;
-        public static int Hp = 100;
-        public static int Dmg = 20;
-        public static bool Humbled = false;
+        public static int Hp = 160;
+        public static int Dmg = 40;
+        public static int Healing = 9;
+        public static bool Attacking = false;
         //if you showed mercy to a monster you get a devastating gut punch that basicly forces you into a bad ending
 
         //Add 2 new bool type functions to easen my own stress
@@ -26,18 +27,7 @@ namespace TextBasedAdventureGame
         //make the external documentation!
         
 
-        public static void SendBool1B()
-
-        {
-            RoomChoise1 boolReturned = new RoomChoise1();
-
-            //friend hidden end
-
-           
-              
-            
-        }
-
+     
 
 
         //change a variable so it'll send true to roomchoise2 as you can't instantiate a static

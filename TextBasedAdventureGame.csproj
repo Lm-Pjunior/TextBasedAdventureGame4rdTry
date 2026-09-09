@@ -43,15 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttackMenu.cs" />
     <Compile Include="ChooseDecision.cs" />
     <Compile Include="FaceSlug.cs" />
+    <Compile Include="GeeseHorde.cs" />
     <Compile Include="HordeMonster.cs" />
+    <Compile Include="HordeOfPoolnoodles.cs" />
     <Compile Include="HordeRoute.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="PlayerStatus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="RoomChoise1.cs" />
     <Compile Include="RoomChoise2.cs" />
+    <Compile Include="ScientistHorde.cs" />
     <Compile Include="SecurityRoomSubChoice2.cs" />
     <Compile Include="SecurityRoomSubChoise1.cs" />
     <Compile Include="StoryLine.cs" />
