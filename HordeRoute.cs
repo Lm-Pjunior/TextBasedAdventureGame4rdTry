@@ -40,7 +40,7 @@ namespace TextBasedAdventureGame
 
                 Console.WriteLine("You arrive at a dead end... sadly your caveman brain couldn't see this comming... but hey at least you managed to hold a multitude of carcases in one han- wait don't \r\n" +
                     "just throw them all at the wall you stuppid baraberian!!! Wait w-w-why is that WORKING?!?!?! WASN'T THIS SUPPSOED TO BE A HIGH SECURITY FACILITY what are these walls made out off? PAPER?!!??!" +
-                    " \r\n...Anywho you S O M E H O W managed to break through with sheer brute force... despite it going against every law of nature \r\n\r\n" +
+                    " \r\n...Anywho you S O M E H O W managed to break through with sheer brute force... despite it going against every law of nature... finishing your 'weapons' off, makking a gigantic mess. \r\n\r\n" +
                     "[labomtamized caveman ending achieved]");
                 System.Environment.Exit(0);
             }

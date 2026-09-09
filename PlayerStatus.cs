@@ -8,30 +8,14 @@ namespace TextBasedAdventureGame
 {
     public static class PlayerStatus
     {
-        //make 2 functions for the friend bool and baton bool each 1 is a bool function the other a void fucntion that turns a bool on!
-
-
-        //expand the grandmaster of war ending and add a status too ti where you see your sype of soldiers and the ammount of them that you have and if it reaches a certain point you die by the ending.
-
+      
         public static bool Armed = false;
         public static bool Friend = false;
         public static int Hp = 160;
         public static int Dmg = 40;
         public static int Healing = 9;
         public static bool Attacking = false;
-        //if you showed mercy to a monster you get a devastating gut punch that basicly forces you into a bad ending
-
-        //Add 2 new bool type functions to easen my own stress
-
-        //fix the choise system since there are excess options still.
-        //make the external documentation!
-        
-
-     
-
-
-        //change a variable so it'll send true to roomchoise2 as you can't instantiate a static
-
+        public static string Weapon = "an uncountable ammount of swatted flies";
     }
     }
 

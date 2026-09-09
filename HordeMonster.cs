@@ -58,16 +58,17 @@ namespace TextBasedAdventureGame
             }
             
             
-                Console.WriteLine("\r\n Hmmmm they seem dead should anywho I take this as a weapon? \r\n Type yes or no");
+                Console.WriteLine("\r\n Hmmmm they seem dead. should take weapon? \r\n Type yes or no");
                 _answer = Console.ReadLine();
                 if (_answer == "yes" || _answer == "Yes")
                 {
-                    Console.WriteLine("You pick up a carcase and proceed through. \r\n");
+                    Console.WriteLine("You pick up a 'carcase' and proceed through. \r\n");
                     PlayerStatus.Dmg += _hp / 2;
+                PlayerStatus.Weapon += $", the body of a {_name}";
                 }
                 else
                 {
-                    Console.WriteLine("Sad... I'll go now though.");
+                    Console.WriteLine("Sad... I go now.");
                 }
             
         }

@@ -11,12 +11,12 @@ namespace TextBasedAdventureGame
         public void Attack()
         {
             string answer;
-            Console.WriteLine("'Attack', 'Heal' or 'Mercy'? " +
-                "\r\n Type down your path oh labotamised one.\r\n");
+            Console.WriteLine("Type 'Attack', 'Heal', 'Mercy' or 'Check' in order to check on what you're holding \r\n" +
+                "down in order to choose your path oh labotamised one.\r\n");
             answer = Console.ReadLine();
             if(answer == "Attack" ||  answer == "attack")
             {
-                Console.WriteLine(" Uheuhuuuu weird thing is noooiiccyyy... I smack noiccyyyy thiiing.\r\n\r\n");
+                Console.WriteLine(" Uheuhuuuu weird thing is noooiiccyyy... I smack noiccyyyy thiiing.\r\n");
                 PlayerStatus.Attacking = true;
             }
             if ((answer == "Heal" || answer == "heal") & PlayerStatus.Healing > 0)
@@ -28,7 +28,7 @@ namespace TextBasedAdventureGame
 
             if((answer == "Heal" || answer == "heal") & PlayerStatus.Healing <= 0)
             {
-                Console.WriteLine("Sadly enough for you, you don't have enough healing left nor can you sacrifice your frontal lobe for whatever kind of magic that was.\r\n\r\n");
+                Console.WriteLine("Sadly enough for you, you don't have enough healing left nor can you sacrifice your frontal lobe for whatever kind of magic that was.\r\n");
             }
 
             if(answer == "Mercy" || answer == "mercy")
@@ -37,8 +37,12 @@ namespace TextBasedAdventureGame
                     "I swing noicy noicy thing away.");
                 PlayerStatus.Attacking = true;
             }
+            if(answer == "check" || answer == "Check")
+            {
+                Console.WriteLine($"You currently hold {PlayerStatus.Healing} healing on you and your weapon consists of {PlayerStatus.Weapon}.\r\n");
+                Attack();
+            }
             
-
         }
     }
 }
