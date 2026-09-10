@@ -96,6 +96,7 @@ namespace TextBasedAdventureGame
                "As you put your hand in the pocket you get attacked, in a hurry you turn around.");
 
             Console.ReadLine();
+            Console.Clear();
             if (PlayerStatus.Armed) 
                 //Unlike NORMALLY static is the special kid of the bunch... sso instead of makking your usual instatiation you have to actualy put the class name infront of it.
             {
@@ -113,7 +114,10 @@ namespace TextBasedAdventureGame
                     "You continue with your suicidal journey to the generators...\r\n\r\n" +
                     "You have arrived at the generator, you're in luck as the door has been torn off by something, you walk forward temporarely using your new weapon\r\n" +
                     "as a crutch, not the smartest option but you couldn't find anythign else, and you DID NOT want to fight whatever the fuck that THING was from\r\n" +
-                    "before, so you decided to go as fast as your tattered leg allowed you. \r\n\r\n" +
+                    "before, so you decided to go as fast as your tattered leg allowed you. \r\n\r\n");
+                Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine(
                     "You entered the generator room and once again, you're met with corpses. This time it's the corpses on the workers so you grab their pass in order\r\n" +
                     "to activate the generators, but you time is nigh, you've lost a lot of blood from your leg and the internal injuries that happened during your \r\n" +
                     "fight with that damned beast. As you activate the generator it starts blaring so you hurridly sit on the floor and lean against the generator,\r\n" +
