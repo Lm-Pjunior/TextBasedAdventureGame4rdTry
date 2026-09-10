@@ -10,7 +10,7 @@ namespace TextBasedAdventureGame
     {
         public void HordePath()
         {
-
+            Console.Clear();
             Console.WriteLine("\r\nYou decide to face the horde but you're unprepared so by the power of imagination \r\n" +
                 "you conjure up some healing and a weapon at the cost of your frontal lobe. \r\n\r\n" +
                 "You continue walking down a corridor that you do not know anything of afterall how can a simpleton like yourself process even for a single tought...\r\n" +

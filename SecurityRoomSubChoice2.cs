@@ -105,7 +105,10 @@ namespace TextBasedAdventureGame
                             "of them... he hanged them on the walls or sadisticly torn them limb for limb... It was toying with you and wanted to drown you in despair before eating you\r\n" +
                             "so... it gave you a gift... soem of your brothers... weren't graced by death their bodies had been thrown into fires and their wounds cauterized... they were alive\r\n" +
                             "without any limbs. They served the beast one purpose and one purpose alone... instilling despair on your remaining brothers. It would dig into their flesh to make\r\n" +
-                            "them scream slowely gutting them infront of your eyes... \r\n" +
+                            "them scream slowely gutting them infront of your eyes... \r\n");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine(
                             "your brothers no longer being able to handle this scene grabbed their guns and started shooting the beast...\r\n" +
                             "It used the corpses and those alive as shields and advanced towards us ccutting us one... by... one many of us lsot our lives.\r\n" +
                             "I grabbed the little explosives we had remaining and put them on my vest...\r\n" +
@@ -121,6 +124,8 @@ namespace TextBasedAdventureGame
         public override void StoryLineSec()
         {
             //grandmaster of war
+            Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("You order your men to gather the weapons and medical supplies, the scouts reported a nearby nest... this news came with the price of a few of your men.\r\n" +
                 "With the new equipment you launch a distraction mission to distract the beast as the other group goes out to gather the emdical supplies.\r\n" +
                 "You and the rest of the forces go back to help the group that baited the creature... many are harmed... almost dead even... you have some of your soldiers tend\r\n" +
@@ -133,6 +138,7 @@ namespace TextBasedAdventureGame
                 "The beast had finished its final struggle... and now all that remained was the stench of blood and dozens of corpses... but a victory nontheless. You decide to further\r\n" +
                 "your advances in order to kill many more beasts to come and discover the secrets that this facility holds... and grow your strenght in the process.\r\n\r\n\r\n");
             Console.ReadLine();
+            Console.Clear();
 
             Console.WriteLine($"You travel through the hallwaws on search for people and riches but instead...");
             _twisted.CreatureSpawn();
@@ -155,6 +161,8 @@ namespace TextBasedAdventureGame
         }
         public void StoryLineBad()
         {
+            Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("He makes his way over \"Well, guess you're still alive\" he says in an annoyed tone, you look at him and just walk away. He's of no use a liability even.\r\n" +
                         "The atmosphere is a bit tense quite a few people seem wary of you... guess they're his friends. While others seem to be somewhat on your side \r\n" +
                         "after seeing your achievement. It's getting late and you decide to go on guard duty togheter with the guard that you've saved before.\r\n" +
@@ -169,7 +177,10 @@ namespace TextBasedAdventureGame
                         "metal sticking out of the debri once called a wall. The beast runs towards you with devestating killing intent and you shoot at ists eyes trying to \r\n" +
                         "blind it... however unlike your plan it decides to grab you with its tail and throw you towards the guard... your condition is... bad, your leg took\r\n" +
                         "the brunt of the impact shattering in the process and now the beast run towards you... you grab the guard's gun, shot him in his leg\r\n" +
-                        "and threw him towards the beast... killing him.\r\n" +
+                        "and threw him towards the beast... killing him.\r\n");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine(           
                         "You grab *your* rifle and start going for the eyes once more... but the beast decided to just leave with its new snack rapped with its tail... you survived\r\n" +
                         "but at what costs? You look behind you and see your old roommate and his mates... guess that's that for your social life.\r\n" +
                         "With heavy steps you return to the temporary base, with a heavy atmosphere those that once admired you now being the once that hate you most.\r\n" +

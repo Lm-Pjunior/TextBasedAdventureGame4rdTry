@@ -95,8 +95,11 @@ namespace TextBasedAdventureGame
                 "of this facility so he cannot disclose it, so... you ask if he doesn't want it than? afterall can't use something with the possebility of turning \r\n" +
                 "you into one of THOSE abominations that are slowely makking their way to us RIGHT NOW... the guard getting your point immediatly says that \r\n" +
                 "there is no need for worry for the stimulant is not one to carry such risks. It does however regenerate lost limbs...\r\n" +
-                "this miracle medicne is one of the byproducts of the research done here.\r\n" +
-                "And just the thing this man needs, as his hand is gone his arm wounded and his legs... eaten. \r\n" +
+                "this miracle medicne is one of the byproducts of the research done here.\r\n");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine(
+            "And just the thing this man needs, as his hand is gone his arm wounded and his legs... eaten. \r\n" +
                 "Sadly the guard can no longer stay conscious due to all the blood he lsot, hell it's a wonder he's even ALIVE. Without a doubt he'll make a fine pawn.\r\n" +
                 "But... how close was the monster again? Might've been smarter to keep better track of it but you got far too immersed into the guard's story\r\n" +
                 "that you actualy forgot about that behemoth of a beast. You turn around and... to no supprise make eye contact with it. You immediatly grab the\r\n" +
@@ -104,6 +107,7 @@ namespace TextBasedAdventureGame
                 "pissed off at you. It lets out a thunderous roar and starts sprinting. Will you end up like the guard next to you? Or will you survive long enough for\r\n" +
                 "the other guards to appear...\r\n");
             Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("\r\nThe beast LUNGES at you from meters far willing to make you its snack. You roll to the side and shoot the beast's neck wounding the damn thing,\r\n" +
             "the beast now blinded by rage just simply runs at you disregardng its defences and runs at you solely to kill.\r\n" +
             "You steady your breathing and take aim... you shoot the beast's left eye, the one that seemed weakest with all the scars that it had sustained.\r\n" +
@@ -115,6 +119,7 @@ namespace TextBasedAdventureGame
             "At this moment the person that you saved comes to thank you for what you did for him after hearing the explenation of the other guards. And another\r\n" +
             "person comes over... It's your roommate from the other day.\r\n");
             Console.ReadLine();
+            Console.Clear();
         }
     }
 }

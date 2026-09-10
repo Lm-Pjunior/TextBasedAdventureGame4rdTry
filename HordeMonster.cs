@@ -25,7 +25,7 @@ namespace TextBasedAdventureGame
             //the groupAttack is a local variable
             int groupAttack = _dmg * _ammount;
             PlayerStatus.Hp -= groupAttack;
-            Console.WriteLine($"The enemy horde attacked you and dealt {_dmg} damage each, you only got {PlayerStatus.Hp} hp left! \r\n\r\n");
+            Console.WriteLine($"The enemy horde attacked you and dealt {_dmg} damage each, you only got {PlayerStatus.Hp} hp left! \r\n");
         }
         public void MonstersDmgTaken()
         {
@@ -36,7 +36,7 @@ namespace TextBasedAdventureGame
             {
                 if (PlayerStatus.Hp <= 0)
                 {
-                    Console.WriteLine("\r\n Oh boy seems you died... \r\n\r\n [Short lived ending achieved] \r\n\r\n");
+                    Console.WriteLine("\r\n Oh boy seems you died... \r\n [Short lived ending achieved] \r\n\r\n");
                     System.Environment.Exit(0);
 
                 }
@@ -44,8 +44,8 @@ namespace TextBasedAdventureGame
                 if (PlayerStatus.Attacking)
                 {
                     hordeHp -= PlayerStatus.Dmg;
-                    Console.WriteLine($"\r\n You swing your arm around like a tothler would, smacking the enemy with whatever you wanna call your weapon. \r\n" +
-                    $"You dealth {PlayerStatus.Dmg} damage to your apponenents leaving them with {hordeHp} hp. \r\n\r\n");
+                    Console.WriteLine($"\r\n You swing your arm around like a tothler would, smacking the enemy with whatever you wanna call your weapon." +
+                    $"You dealth {PlayerStatus.Dmg} damage to your apponenents leaving them with {hordeHp} hp. \r\n");
                 }
                 PlayerStatus.Attacking = false;
 

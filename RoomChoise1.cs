@@ -151,6 +151,7 @@ namespace TextBasedAdventureGame
                "Luckily for you, you passed so you can FINNALY buy a gaming set which you couldn't afford before... you never had anything besides your body and wits...\r\n" +
                "The instructor gives you your ID and tells you go by the armory at some point in roder to get your gear.\r\n" +
                "But be sure not to go to the shooting range as it's dangerous currently...");
+            Console.ReadLine();
         }
 
         public override void StoryLineSec()
